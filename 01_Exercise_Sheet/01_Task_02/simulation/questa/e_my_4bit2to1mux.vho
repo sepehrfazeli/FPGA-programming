@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition"
 
--- DATE "10/12/2023 22:08:14"
+-- DATE "10/13/2023 10:03:46"
 
 -- 
 -- Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -94,8 +94,8 @@ SIGNAL \LEDR~3_combout\ : std_logic;
 SIGNAL \ALT_INV_sw[4]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[9]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[0]~input_o\ : std_logic;
-SIGNAL \ALT_INV_sw[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[5]~input_o\ : std_logic;
+SIGNAL \ALT_INV_sw[1]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[6]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[2]~input_o\ : std_logic;
 SIGNAL \ALT_INV_sw[7]~input_o\ : std_logic;
@@ -111,8 +111,8 @@ ww_devpor <= devpor;
 \ALT_INV_sw[4]~input_o\ <= NOT \sw[4]~input_o\;
 \ALT_INV_sw[9]~input_o\ <= NOT \sw[9]~input_o\;
 \ALT_INV_sw[0]~input_o\ <= NOT \sw[0]~input_o\;
-\ALT_INV_sw[1]~input_o\ <= NOT \sw[1]~input_o\;
 \ALT_INV_sw[5]~input_o\ <= NOT \sw[5]~input_o\;
+\ALT_INV_sw[1]~input_o\ <= NOT \sw[1]~input_o\;
 \ALT_INV_sw[6]~input_o\ <= NOT \sw[6]~input_o\;
 \ALT_INV_sw[2]~input_o\ <= NOT \sw[2]~input_o\;
 \ALT_INV_sw[7]~input_o\ <= NOT \sw[7]~input_o\;

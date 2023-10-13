@@ -1,5 +1,5 @@
 Analysis & Synthesis report for e_my_4bit2to1mux
-Thu Oct 12 22:07:33 2023
+Fri Oct 13 10:02:42 2023
 Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 12 22:07:33 2023          ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 13 10:02:41 2023          ;
 ; Quartus Prime Version           ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
 ; Revision Name                   ; e_my_4bit2to1mux                               ;
 ; Top-level Entity Name           ; e_my_4bit2to1mux                               ;
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                         ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
-; e_my_4bit2to1mux.vhd             ; yes             ; User VHDL File  ; E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                          ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------+---------+
+; e_my_4bit2to1mux.vhd             ; yes             ; User VHDL File  ; //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd ;         ;
++----------------------------------+-----------------+-----------------+------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -258,38 +258,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
-    Info: Processing started: Thu Oct 12 22:07:23 2023
+    Info: Processing started: Fri Oct 13 10:02:29 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off e_my_4bit2to1mux -c e_my_4bit2to1mux
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file e_my_4bit2to1mux.vhd
-    Info (12022): Found design unit 1: e_my_4bit2to1mux-a_my_4bit2to1mux_1 File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 11
-    Info (12023): Found entity 1: e_my_4bit2to1mux File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 4
+    Info (12022): Found design unit 1: e_my_4bit2to1mux-a_my_4bit2to1mux_1 File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 11
+    Info (12023): Found entity 1: e_my_4bit2to1mux File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 4
 Info (12127): Elaborating entity "e_my_4bit2to1mux" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(26): signal "s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(29): signal "s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(30): signal "X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(32): signal "Y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 32
-Warning (10873): Using initial value X (don't care) for net "LEDR[8..4]" at e_my_4bit2to1mux.vhd(7) File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
+Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(26): signal "s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(29): signal "s" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(30): signal "X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at e_my_4bit2to1mux.vhd(32): signal "Y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 32
+Warning (10873): Using initial value X (don't care) for net "LEDR[8..4]" at e_my_4bit2to1mux.vhd(7) File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[4]" is stuck at GND File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
-    Warning (13410): Pin "LEDR[5]" is stuck at GND File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
-    Warning (13410): Pin "LEDR[6]" is stuck at GND File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 7
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "sw[8]" File: E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 6
+    Warning (15610): No output dependent on input pin "sw[8]" File: //storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/e_my_4bit2to1mux.vhd Line: 6
 Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 10 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Thu Oct 12 22:07:33 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Fri Oct 13 10:02:42 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:17
 
 

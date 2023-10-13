@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("E:/intelFPGA_lite/FPGA_Excercises/FPGA-programming/01_Exercise_Sheet/01_Task_02/output_files/") File("e_my_4bit2to1mux.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("//storage2/sf07627$/Desktop/FPGA-programming/01_Exercise_Sheet/01_Task_02/output_files/") File("e_my_4bit2to1mux.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

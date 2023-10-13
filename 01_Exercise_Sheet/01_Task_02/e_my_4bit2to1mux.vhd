@@ -10,8 +10,7 @@ end entity e_my_4bit2to1mux;
 
 architecture a_my_4bit2to1mux_1 of e_my_4bit2to1mux is
     signal s : std_logic; -- Declare s as a signal
-    signal X : std_logic_vector(3 downto 0); -- Declare X as a signal
-    signal Y : std_logic_vector(3 downto 0); -- Declare Y as a signal
+    signal X,Y : std_logic_vector(3 downto 0); -- Declare X, M as a signal
 
 begin
     process(sw)
