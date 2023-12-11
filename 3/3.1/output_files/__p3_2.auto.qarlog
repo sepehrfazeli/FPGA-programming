@@ -1,0 +1,18 @@
+Quartus Prime Archive log --	C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/__p3_2.auto.qarlog
+
+Archive:	C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/__p3_2.auto.qar
+Date:		Mon Oct 30 18:48:34 2023
+Quartus Prime		22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/db/p3_2.cbx.xml
+C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/db/p3_2.qpf
+C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/output_files/p3_2.flow.rpt
+C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/output_files/p3_2.map.rpt
+C:/Users/SFI19/Downloads/FPGA/3/3.1/output_files/output_files/p3_2.map.summary
+e:/intelfpga_lite/22.1std/quartus/bin64/assignment_defaults.qdf
+p3_2.qsf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

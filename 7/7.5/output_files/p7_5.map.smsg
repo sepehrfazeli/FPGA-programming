@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at p7_5.sv(26): always construct contains both blocking and non-blocking assignments File: C:/Users/SFI19/Downloads/FPGA/7/7.5/p7_5.sv Line: 26

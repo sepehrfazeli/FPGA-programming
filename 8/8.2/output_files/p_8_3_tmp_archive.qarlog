@@ -1,0 +1,21 @@
+Quartus Prime Archive log --	C:/Users/SFI19/Downloads/FPGA/8/8.2/output_files/p_8_3_tmp_archive.qarlog
+
+Archive:	C:/Users/SFI19/Downloads/FPGA/8/8.2/output_files/p_8_3_tmp_archive.qar
+Date:		Sun Nov 19 20:05:14 2023
+Quartus Prime		22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/SFI19/Downloads/FPGA/8/8.2/output_files/p_8_3.qpf
+C:/Users/SFI19/Downloads/FPGA/8/8.2/output_files/p_8_3.qsf
+C:/Users/SFI19/Downloads/FPGA/8/8.2/output_files/p_8_3.sv
+e:/intelfpga_lite/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 4 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Nov 19 20:05:15 2023
+Source archive file:	C:/Users/SFI19/Downloads/FPGA/8/8.2/output_files/p_8_3_tmp_archive.qar
+Archive was extracted into	C:/Users/SFI19/Downloads/FPGA/8/8.3/
+		 - successfully.

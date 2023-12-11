@@ -1,0 +1,15 @@
+module d_ff
+(
+	input logic clk ,
+	input logic d ,
+	output logic q
+) ;
+logic [25:0] cntr;
+
+always @ (posedge(clk))begin
+	cntr = cntr + 1;
+end
+ 
+always_ff @ ( posedge cntr[23] )
+	q <= d ;
+endmodule

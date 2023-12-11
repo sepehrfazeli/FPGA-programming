@@ -1,0 +1,205 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "led[8]",
+					"strict" : false
+				},
+				{
+					"name" : "led[9]",
+					"strict" : false
+				},
+				{
+					"name" : "led[10]",
+					"strict" : false
+				},
+				{
+					"name" : "led[11]",
+					"strict" : false
+				},
+				{
+					"name" : "led[12]",
+					"strict" : false
+				},
+				{
+					"name" : "led[13]",
+					"strict" : false
+				},
+				{
+					"name" : "led[14]",
+					"strict" : false
+				},
+				{
+					"name" : "led[15]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_seg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_seg[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[4]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[5]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[6]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[15]",
+					"strict" : false
+				},
+				{
+					"name" : "mclk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

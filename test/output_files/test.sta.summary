@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'mclk'
+Slack : -3.738
+TNS   : -46.969
+
+Type  : Slow 1100mV 85C Model Setup 'cnt29[24]'
+Slack : -3.735
+TNS   : -87.675
+
+Type  : Slow 1100mV 85C Model Hold 'mclk'
+Slack : 0.368
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'cnt29[24]'
+Slack : 0.502
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'mclk'
+Slack : -0.394
+TNS   : -15.379
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'cnt29[24]'
+Slack : -0.394
+TNS   : -12.860
+
+Type  : Slow 1100mV 0C Model Setup 'cnt29[24]'
+Slack : -3.879
+TNS   : -91.007
+
+Type  : Slow 1100mV 0C Model Setup 'mclk'
+Slack : -3.593
+TNS   : -47.558
+
+Type  : Slow 1100mV 0C Model Hold 'mclk'
+Slack : 0.009
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'cnt29[24]'
+Slack : 0.526
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'mclk'
+Slack : -0.394
+TNS   : -16.606
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'cnt29[24]'
+Slack : -0.394
+TNS   : -12.805
+
+Type  : Fast 1100mV 85C Model Setup 'mclk'
+Slack : -2.808
+TNS   : -20.927
+
+Type  : Fast 1100mV 85C Model Setup 'cnt29[24]'
+Slack : -1.829
+TNS   : -42.550
+
+Type  : Fast 1100mV 85C Model Hold 'mclk'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'cnt29[24]'
+Slack : 0.211
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'mclk'
+Slack : -0.378
+TNS   : -2.701
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'cnt29[24]'
+Slack : 0.042
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'mclk'
+Slack : -2.341
+TNS   : -17.854
+
+Type  : Fast 1100mV 0C Model Setup 'cnt29[24]'
+Slack : -1.786
+TNS   : -41.506
+
+Type  : Fast 1100mV 0C Model Hold 'mclk'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'cnt29[24]'
+Slack : 0.206
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'mclk'
+Slack : -0.366
+TNS   : -2.605
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'cnt29[24]'
+Slack : 0.053
+TNS   : 0.000
+
+------------------------------------------------------------

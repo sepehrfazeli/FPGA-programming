@@ -1,0 +1,50 @@
+module Seven_Segment(
+    input wire [7:0] slide_switches, // Input from slide switches
+    input wire [3:0] pushbuttons,     // Input from pushbuttons
+    output wire [6:0] segment_pins,   // Output to control seven-segment segments
+    output wire [3:0] anode_pins      // Output to control anodes for DISP1
+);
+
+// Define your segment patterns
+reg [6:0] segment_pattern;
+
+// Define state machine to control the anodes
+reg [2:0] anode_state;
+
+// Define constants for anode states
+parameter ANODE_OFF = 3'b000;
+parameter ANODE_DISP0 = 3'b001;
+parameter ANODE_DISP1 = 3'b010;
+parameter ANODE_DISP2 = 3'b011;
+parameter ANODE_DISP3 = 3'b100;
+
+// Define your segment patterns for different digits
+always @(anode_state) begin
+    case (anode_state)
+        ANODE_OFF: segment_pattern = 7'b111_1111; // All segments off
+        ANODE_DISP0: segment_pattern = 7'b011_0000; // Display digit 0
+        ANODE_DISP1: segment_pattern = 7'b011_1111; // Display digit 1
+        ANODE_DISP2: segment_pattern = 7'b101_1001; // Display digit 2
+        ANODE_DISP3: segment_pattern = 7'b101_1110; // Display digit 3
+        default: segment_pattern = 7'b111_1111; // All segments off
+    endcase
+end
+
+// Drive the segment_pins based on slide_switches
+assign segment_pins = (slide_switches[7:0] & segment_pattern);
+
+// State machine to control anode_pins based on pushbuttons
+always @(posedge pushbuttons) begin
+    case (pushbuttons)
+        4'b0001: anode_state = ANODE_DISP0; // Button 0, display digit 0
+        4'b0010: anode_state = ANODE_DISP1; // Button 1, display digit 1
+        4'b0100: anode_state = ANODE_DISP2; // Button 2, display digit 2
+        4'b1000: anode_state = ANODE_DISP3; // Button 3, display digit 3
+        default: anode_state = ANODE_OFF;   // No button pressed
+    endcase
+end
+
+// Drive the anode_pins based on anode_state
+assign anode_pins = {anode_state, 1'b0};
+
+endmodule

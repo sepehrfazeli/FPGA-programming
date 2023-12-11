@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "acount[0]",
+					"strict" : false
+				},
+				{
+					"name" : "acount[1]",
+					"strict" : false
+				},
+				{
+					"name" : "acount[2]",
+					"strict" : false
+				},
+				{
+					"name" : "acount[3]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

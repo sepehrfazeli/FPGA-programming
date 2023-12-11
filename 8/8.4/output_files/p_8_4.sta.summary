@@ -1,0 +1,1349 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -2.363
+TNS   : -2.363
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[5].dff_inst'
+Slack : -1.928
+TNS   : -1.928
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[16].dff_inst'
+Slack : -1.823
+TNS   : -1.823
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[9].dff_inst'
+Slack : -1.746
+TNS   : -1.746
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[24].dff_inst'
+Slack : -1.671
+TNS   : -1.671
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[3].dff_inst'
+Slack : -1.665
+TNS   : -1.665
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[22].dff_inst'
+Slack : -1.660
+TNS   : -1.660
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[7].dff_inst'
+Slack : -1.646
+TNS   : -1.646
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[1].dff_inst'
+Slack : -1.635
+TNS   : -1.635
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[14].dff_inst'
+Slack : -1.634
+TNS   : -1.634
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[11].dff_inst'
+Slack : -1.611
+TNS   : -1.611
+
+Type  : Slow 1100mV 85C Model Setup 'dff_inst0'
+Slack : -1.560
+TNS   : -1.560
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[12].dff_inst'
+Slack : -1.559
+TNS   : -1.559
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[18].dff_inst'
+Slack : -1.558
+TNS   : -1.558
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[6].dff_inst'
+Slack : -1.525
+TNS   : -1.525
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[23].dff_inst'
+Slack : -1.518
+TNS   : -1.518
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[21].dff_inst'
+Slack : -1.501
+TNS   : -1.501
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[19].dff_inst'
+Slack : -1.481
+TNS   : -1.481
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[26].dff_inst'
+Slack : -1.473
+TNS   : -9.926
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[20].dff_inst'
+Slack : -1.463
+TNS   : -1.463
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[13].dff_inst'
+Slack : -1.448
+TNS   : -1.448
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[10].dff_inst'
+Slack : -1.440
+TNS   : -1.440
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[2].dff_inst'
+Slack : -1.434
+TNS   : -1.434
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[25].dff_inst'
+Slack : -1.424
+TNS   : -1.424
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[4].dff_inst'
+Slack : -1.405
+TNS   : -1.405
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[8].dff_inst'
+Slack : -1.402
+TNS   : -1.402
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[15].dff_inst'
+Slack : -1.373
+TNS   : -1.373
+
+Type  : Slow 1100mV 85C Model Setup 'dff_gen_label[17].dff_inst'
+Slack : -1.254
+TNS   : -1.254
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[17].dff_inst'
+Slack : 0.221
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[25].dff_inst'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[20].dff_inst'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[15].dff_inst'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_inst0'
+Slack : 0.471
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[4].dff_inst'
+Slack : 0.486
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[8].dff_inst'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[12].dff_inst'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[2].dff_inst'
+Slack : 0.519
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[21].dff_inst'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[19].dff_inst'
+Slack : 0.533
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[18].dff_inst'
+Slack : 0.538
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[10].dff_inst'
+Slack : 0.540
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[13].dff_inst'
+Slack : 0.548
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[1].dff_inst'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[3].dff_inst'
+Slack : 0.554
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[14].dff_inst'
+Slack : 0.559
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[7].dff_inst'
+Slack : 0.564
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[22].dff_inst'
+Slack : 0.567
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[11].dff_inst'
+Slack : 0.586
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[23].dff_inst'
+Slack : 0.592
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[6].dff_inst'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[24].dff_inst'
+Slack : 0.619
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[26].dff_inst'
+Slack : 0.621
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[9].dff_inst'
+Slack : 0.682
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[5].dff_inst'
+Slack : 0.684
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.689
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'dff_gen_label[16].dff_inst'
+Slack : 0.726
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[26].dff_inst'
+Slack : -0.394
+TNS   : -4.104
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -0.742
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[14].dff_inst'
+Slack : -0.394
+TNS   : -0.671
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[5].dff_inst'
+Slack : -0.394
+TNS   : -0.628
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[25].dff_inst'
+Slack : -0.394
+TNS   : -0.545
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[22].dff_inst'
+Slack : -0.394
+TNS   : -0.543
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[1].dff_inst'
+Slack : -0.394
+TNS   : -0.541
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[24].dff_inst'
+Slack : -0.394
+TNS   : -0.533
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_inst0'
+Slack : -0.394
+TNS   : -0.530
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[11].dff_inst'
+Slack : -0.394
+TNS   : -0.527
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[17].dff_inst'
+Slack : -0.394
+TNS   : -0.527
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[12].dff_inst'
+Slack : -0.394
+TNS   : -0.525
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[9].dff_inst'
+Slack : -0.394
+TNS   : -0.525
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[3].dff_inst'
+Slack : -0.394
+TNS   : -0.524
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[7].dff_inst'
+Slack : -0.394
+TNS   : -0.524
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[20].dff_inst'
+Slack : -0.394
+TNS   : -0.523
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[16].dff_inst'
+Slack : -0.394
+TNS   : -0.521
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[18].dff_inst'
+Slack : -0.394
+TNS   : -0.519
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[15].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[10].dff_inst'
+Slack : -0.394
+TNS   : -0.512
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[6].dff_inst'
+Slack : -0.394
+TNS   : -0.512
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[13].dff_inst'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[19].dff_inst'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[21].dff_inst'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[2].dff_inst'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[4].dff_inst'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[8].dff_inst'
+Slack : -0.394
+TNS   : -0.510
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[23].dff_inst'
+Slack : -0.394
+TNS   : -0.508
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -2.268
+TNS   : -2.268
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[5].dff_inst'
+Slack : -1.907
+TNS   : -1.907
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[16].dff_inst'
+Slack : -1.813
+TNS   : -1.813
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[9].dff_inst'
+Slack : -1.721
+TNS   : -1.721
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[24].dff_inst'
+Slack : -1.680
+TNS   : -1.680
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[22].dff_inst'
+Slack : -1.666
+TNS   : -1.666
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[7].dff_inst'
+Slack : -1.633
+TNS   : -1.633
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[3].dff_inst'
+Slack : -1.628
+TNS   : -1.628
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[6].dff_inst'
+Slack : -1.606
+TNS   : -1.606
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[23].dff_inst'
+Slack : -1.603
+TNS   : -1.603
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[1].dff_inst'
+Slack : -1.596
+TNS   : -1.596
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[14].dff_inst'
+Slack : -1.594
+TNS   : -1.594
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[11].dff_inst'
+Slack : -1.587
+TNS   : -1.587
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[21].dff_inst'
+Slack : -1.575
+TNS   : -1.575
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[12].dff_inst'
+Slack : -1.560
+TNS   : -1.560
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[18].dff_inst'
+Slack : -1.528
+TNS   : -1.528
+
+Type  : Slow 1100mV 0C Model Setup 'dff_inst0'
+Slack : -1.524
+TNS   : -1.524
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[13].dff_inst'
+Slack : -1.523
+TNS   : -1.523
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[2].dff_inst'
+Slack : -1.523
+TNS   : -1.523
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[10].dff_inst'
+Slack : -1.518
+TNS   : -1.518
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[19].dff_inst'
+Slack : -1.498
+TNS   : -1.498
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[4].dff_inst'
+Slack : -1.497
+TNS   : -1.497
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[8].dff_inst'
+Slack : -1.492
+TNS   : -1.492
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[25].dff_inst'
+Slack : -1.469
+TNS   : -1.469
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[26].dff_inst'
+Slack : -1.461
+TNS   : -9.975
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[15].dff_inst'
+Slack : -1.447
+TNS   : -1.447
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[20].dff_inst'
+Slack : -1.431
+TNS   : -1.431
+
+Type  : Slow 1100mV 0C Model Setup 'dff_gen_label[17].dff_inst'
+Slack : -1.340
+TNS   : -1.340
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[17].dff_inst'
+Slack : 0.314
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[20].dff_inst'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[25].dff_inst'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_inst0'
+Slack : 0.485
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[12].dff_inst'
+Slack : 0.509
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[14].dff_inst'
+Slack : 0.527
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[1].dff_inst'
+Slack : 0.529
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[18].dff_inst'
+Slack : 0.530
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[15].dff_inst'
+Slack : 0.541
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[3].dff_inst'
+Slack : 0.557
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[4].dff_inst'
+Slack : 0.566
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[7].dff_inst'
+Slack : 0.567
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[8].dff_inst'
+Slack : 0.567
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[19].dff_inst'
+Slack : 0.584
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[11].dff_inst'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[2].dff_inst'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[26].dff_inst'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[21].dff_inst'
+Slack : 0.607
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[22].dff_inst'
+Slack : 0.612
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[13].dff_inst'
+Slack : 0.624
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[10].dff_inst'
+Slack : 0.625
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[24].dff_inst'
+Slack : 0.629
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.630
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[23].dff_inst'
+Slack : 0.670
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[9].dff_inst'
+Slack : 0.697
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[6].dff_inst'
+Slack : 0.698
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[5].dff_inst'
+Slack : 0.699
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'dff_gen_label[16].dff_inst'
+Slack : 0.746
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[26].dff_inst'
+Slack : -0.394
+TNS   : -4.180
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.394
+TNS   : -0.734
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[14].dff_inst'
+Slack : -0.394
+TNS   : -0.639
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[5].dff_inst'
+Slack : -0.394
+TNS   : -0.621
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[25].dff_inst'
+Slack : -0.394
+TNS   : -0.553
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[22].dff_inst'
+Slack : -0.394
+TNS   : -0.533
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[1].dff_inst'
+Slack : -0.394
+TNS   : -0.531
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[15].dff_inst'
+Slack : -0.394
+TNS   : -0.529
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[24].dff_inst'
+Slack : -0.394
+TNS   : -0.527
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[17].dff_inst'
+Slack : -0.394
+TNS   : -0.523
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[10].dff_inst'
+Slack : -0.394
+TNS   : -0.519
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_inst0'
+Slack : -0.394
+TNS   : -0.517
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[11].dff_inst'
+Slack : -0.394
+TNS   : -0.516
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[12].dff_inst'
+Slack : -0.394
+TNS   : -0.515
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[9].dff_inst'
+Slack : -0.394
+TNS   : -0.515
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[13].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[20].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[3].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[4].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[7].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[8].dff_inst'
+Slack : -0.394
+TNS   : -0.514
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[19].dff_inst'
+Slack : -0.394
+TNS   : -0.513
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[21].dff_inst'
+Slack : -0.394
+TNS   : -0.513
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[23].dff_inst'
+Slack : -0.394
+TNS   : -0.513
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[2].dff_inst'
+Slack : -0.394
+TNS   : -0.513
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[6].dff_inst'
+Slack : -0.394
+TNS   : -0.513
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[16].dff_inst'
+Slack : -0.394
+TNS   : -0.512
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[18].dff_inst'
+Slack : -0.394
+TNS   : -0.511
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.877
+TNS   : -1.877
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[5].dff_inst'
+Slack : -1.303
+TNS   : -1.303
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[16].dff_inst'
+Slack : -1.180
+TNS   : -1.180
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[9].dff_inst'
+Slack : -1.179
+TNS   : -1.179
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[3].dff_inst'
+Slack : -1.175
+TNS   : -1.175
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[1].dff_inst'
+Slack : -1.149
+TNS   : -1.149
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[7].dff_inst'
+Slack : -1.126
+TNS   : -1.126
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[11].dff_inst'
+Slack : -1.121
+TNS   : -1.121
+
+Type  : Fast 1100mV 85C Model Setup 'dff_inst0'
+Slack : -1.079
+TNS   : -1.079
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[22].dff_inst'
+Slack : -1.076
+TNS   : -1.076
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[14].dff_inst'
+Slack : -1.073
+TNS   : -1.073
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[18].dff_inst'
+Slack : -1.068
+TNS   : -1.068
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[12].dff_inst'
+Slack : -1.063
+TNS   : -1.063
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[24].dff_inst'
+Slack : -1.044
+TNS   : -1.044
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[20].dff_inst'
+Slack : -0.957
+TNS   : -0.957
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[19].dff_inst'
+Slack : -0.861
+TNS   : -0.861
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[25].dff_inst'
+Slack : -0.817
+TNS   : -0.817
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[6].dff_inst'
+Slack : -0.800
+TNS   : -0.800
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[21].dff_inst'
+Slack : -0.787
+TNS   : -0.787
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[23].dff_inst'
+Slack : -0.782
+TNS   : -0.782
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[2].dff_inst'
+Slack : -0.759
+TNS   : -0.759
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[10].dff_inst'
+Slack : -0.747
+TNS   : -0.747
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[13].dff_inst'
+Slack : -0.747
+TNS   : -0.747
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[4].dff_inst'
+Slack : -0.734
+TNS   : -0.734
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[8].dff_inst'
+Slack : -0.733
+TNS   : -0.733
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[15].dff_inst'
+Slack : -0.707
+TNS   : -0.707
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[17].dff_inst'
+Slack : -0.648
+TNS   : -0.648
+
+Type  : Fast 1100mV 85C Model Setup 'dff_gen_label[26].dff_inst'
+Slack : -0.616
+TNS   : -3.609
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[17].dff_inst'
+Slack : -0.058
+TNS   : -0.058
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[15].dff_inst'
+Slack : 0.067
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[4].dff_inst'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[8].dff_inst'
+Slack : 0.089
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[21].dff_inst'
+Slack : 0.107
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[2].dff_inst'
+Slack : 0.110
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[10].dff_inst'
+Slack : 0.111
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[13].dff_inst'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[23].dff_inst'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[25].dff_inst'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[6].dff_inst'
+Slack : 0.166
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[19].dff_inst'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[20].dff_inst'
+Slack : 0.198
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_inst0'
+Slack : 0.250
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[14].dff_inst'
+Slack : 0.260
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[24].dff_inst'
+Slack : 0.265
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[12].dff_inst'
+Slack : 0.271
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[18].dff_inst'
+Slack : 0.302
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[22].dff_inst'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[7].dff_inst'
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[26].dff_inst'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[3].dff_inst'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[1].dff_inst'
+Slack : 0.336
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[11].dff_inst'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[16].dff_inst'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[5].dff_inst'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'dff_gen_label[9].dff_inst'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.341
+TNS   : -0.341
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[14].dff_inst'
+Slack : -0.046
+TNS   : -0.046
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[5].dff_inst'
+Slack : -0.007
+TNS   : -0.007
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[25].dff_inst'
+Slack : 0.078
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[1].dff_inst'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[22].dff_inst'
+Slack : 0.095
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[24].dff_inst'
+Slack : 0.106
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[15].dff_inst'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[17].dff_inst'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_inst0'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[10].dff_inst'
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[26].dff_inst'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[9].dff_inst'
+Slack : 0.131
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[11].dff_inst'
+Slack : 0.136
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[6].dff_inst'
+Slack : 0.137
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[12].dff_inst'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[21].dff_inst'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[19].dff_inst'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[20].dff_inst'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[2].dff_inst'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[3].dff_inst'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[7].dff_inst'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[4].dff_inst'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[13].dff_inst'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[8].dff_inst'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[23].dff_inst'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[18].dff_inst'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'dff_gen_label[16].dff_inst'
+Slack : 0.157
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.539
+TNS   : -1.539
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[5].dff_inst'
+Slack : -1.154
+TNS   : -1.154
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[16].dff_inst'
+Slack : -1.062
+TNS   : -1.062
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[9].dff_inst'
+Slack : -1.048
+TNS   : -1.048
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[3].dff_inst'
+Slack : -1.040
+TNS   : -1.040
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[1].dff_inst'
+Slack : -1.016
+TNS   : -1.016
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[7].dff_inst'
+Slack : -1.009
+TNS   : -1.009
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[11].dff_inst'
+Slack : -0.991
+TNS   : -0.991
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[22].dff_inst'
+Slack : -0.972
+TNS   : -0.972
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[14].dff_inst'
+Slack : -0.955
+TNS   : -0.955
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[18].dff_inst'
+Slack : -0.955
+TNS   : -0.955
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[12].dff_inst'
+Slack : -0.953
+TNS   : -0.953
+
+Type  : Fast 1100mV 0C Model Setup 'dff_inst0'
+Slack : -0.950
+TNS   : -0.950
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[24].dff_inst'
+Slack : -0.948
+TNS   : -0.948
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[20].dff_inst'
+Slack : -0.854
+TNS   : -0.854
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[19].dff_inst'
+Slack : -0.789
+TNS   : -0.789
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[6].dff_inst'
+Slack : -0.760
+TNS   : -0.760
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[25].dff_inst'
+Slack : -0.759
+TNS   : -0.759
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[21].dff_inst'
+Slack : -0.744
+TNS   : -0.744
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[23].dff_inst'
+Slack : -0.742
+TNS   : -0.742
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[2].dff_inst'
+Slack : -0.727
+TNS   : -0.727
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[10].dff_inst'
+Slack : -0.712
+TNS   : -0.712
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[13].dff_inst'
+Slack : -0.711
+TNS   : -0.711
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[4].dff_inst'
+Slack : -0.706
+TNS   : -0.706
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[8].dff_inst'
+Slack : -0.706
+TNS   : -0.706
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[15].dff_inst'
+Slack : -0.678
+TNS   : -0.678
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[17].dff_inst'
+Slack : -0.624
+TNS   : -0.624
+
+Type  : Fast 1100mV 0C Model Setup 'dff_gen_label[26].dff_inst'
+Slack : -0.512
+TNS   : -3.036
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[17].dff_inst'
+Slack : -0.053
+TNS   : -0.053
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[15].dff_inst'
+Slack : 0.053
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[4].dff_inst'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[8].dff_inst'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[2].dff_inst'
+Slack : 0.092
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[21].dff_inst'
+Slack : 0.094
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[13].dff_inst'
+Slack : 0.098
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[10].dff_inst'
+Slack : 0.099
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[23].dff_inst'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[25].dff_inst'
+Slack : 0.133
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[20].dff_inst'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[6].dff_inst'
+Slack : 0.142
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[19].dff_inst'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[14].dff_inst'
+Slack : 0.165
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_inst0'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[12].dff_inst'
+Slack : 0.200
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[24].dff_inst'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[18].dff_inst'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[1].dff_inst'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[22].dff_inst'
+Slack : 0.245
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[7].dff_inst'
+Slack : 0.251
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[3].dff_inst'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[11].dff_inst'
+Slack : 0.267
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[26].dff_inst'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[16].dff_inst'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[5].dff_inst'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'dff_gen_label[9].dff_inst'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.458
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.338
+TNS   : -0.338
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[14].dff_inst'
+Slack : 0.007
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[5].dff_inst'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[25].dff_inst'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[1].dff_inst'
+Slack : 0.113
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[22].dff_inst'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[24].dff_inst'
+Slack : 0.115
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[15].dff_inst'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[26].dff_inst'
+Slack : 0.128
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[17].dff_inst'
+Slack : 0.129
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[10].dff_inst'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[6].dff_inst'
+Slack : 0.135
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[9].dff_inst'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_inst0'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[21].dff_inst'
+Slack : 0.145
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[11].dff_inst'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[4].dff_inst'
+Slack : 0.146
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[19].dff_inst'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[2].dff_inst'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[13].dff_inst'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[8].dff_inst'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[12].dff_inst'
+Slack : 0.150
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[20].dff_inst'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[23].dff_inst'
+Slack : 0.152
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[3].dff_inst'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[7].dff_inst'
+Slack : 0.153
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[16].dff_inst'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'dff_gen_label[18].dff_inst'
+Slack : 0.160
+TNS   : 0.000
+
+------------------------------------------------------------

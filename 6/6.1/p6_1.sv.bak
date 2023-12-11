@@ -1,0 +1,10 @@
+module CombCirc(
+   input  logic A,
+   input  logic B,
+   input  logic C,
+   output logic  X
+   );
+
+// Circuit Description
+
+endmodule

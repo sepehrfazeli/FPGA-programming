@@ -1,0 +1,137 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "D0_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LT",
+					"strict" : false
+				},
+				{
+					"name" : "EQ",
+					"strict" : false
+				},
+				{
+					"name" : "GT",
+					"strict" : false
+				},
+				{
+					"name" : "op1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

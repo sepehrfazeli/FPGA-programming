@@ -1,0 +1,21 @@
+module bit_slice(input wire a, b, cin, output wire sum, cout);
+    assign {cout, sum} = a + b + cin;
+endmodule
+module cpgn(input wire [3:0] a, b, output wire [4:0] c);
+    wire [3:0] g, p;
+    assign g = a & b;  // Generate
+    assign p = a ^ b;  // Propagate
+    assign c[0] = 0;
+    assign c[1] = g[0] | (p[0] & c[0]);
+    assign c[2] = g[1] | (p[1] & c[1]);
+    assign c[3] = g[2] | (p[2] & c[2]);
+    assign c[4] = g[3] | (p[3] & c[3]);
+endmodule
+module cla_4bit(input wire [3:0] a, b, input wire cin, output wire [3:0] sum, output wire cout);
+    wire [4:0] c;
+    cpgn cpgn1 (.a(a), .b(b), .c(c));
+    bit_slice bs0 (.a(a[0]), .b(b[0]), .cin(c[0]), .sum(sum[0]), .cout());
+    bit_slice bs1 (.a(a[1]), .b(b[1]), .cin(c[1]), .sum(sum[1]), .cout());
+    bit_slice bs2 (.a(a[2]), .b(b[2]), .cin(c[2]), .sum(sum[2]), .cout());
+    bit_slice bs3 (.a(a[3]), .b(b[3]), .cin(c[3]), .sum(sum[3]), .cout(cout));
+endmodule

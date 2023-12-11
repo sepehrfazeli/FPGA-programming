@@ -1,0 +1,157 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "D0_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D0_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D1_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D2_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[4]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[5]",
+					"strict" : false
+				},
+				{
+					"name" : "D3_SEG[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "btn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "btn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "btn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "btn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,20 @@
+|p4_3
+I[0] => Equal0.IN31
+I[1] => Y.DATAA
+I[1] => Equal0.IN30
+I[2] => Y.OUTPUTSELECT
+I[2] => Y.DATAA
+I[2] => Equal0.IN29
+I[3] => Y.OUTPUTSELECT
+I[3] => Y.OUTPUTSELECT
+I[3] => Equal0.IN28
+Ein => Y.OUTPUTSELECT
+Ein => Y.OUTPUTSELECT
+Ein => always1.IN1
+Ein => always2.IN1
+Y[0] << Y.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] << Y.DB_MAX_OUTPUT_PORT_TYPE
+GS << always2.DB_MAX_OUTPUT_PORT_TYPE
+Eout << always1.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,12 @@
+|p_8_1
+clk => acount[0]~reg0.CLK
+rst => acount[3]~reg0.ACLR
+rst => acount[2]~reg0.ACLR
+rst => acount[1]~reg0.ACLR
+rst => acount[0]~reg0.ACLR
+acount[0] <= acount[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+acount[1] <= acount[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+acount[2] <= acount[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+acount[3] <= acount[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,16 @@
+|p_8_4
+clk => dff_inst0.CLK
+rst => cntr[0].ACLR
+rst => cntr[1].ACLR
+rst => cntr[2].ACLR
+rst => cntr[3].ACLR
+led <= dff_gen_label[26].dff_inst.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

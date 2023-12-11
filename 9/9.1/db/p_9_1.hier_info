@@ -1,0 +1,80 @@
+|p_9_1
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+cin => ~NO_FANOUT~
+D0_SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[0] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[1] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[2] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[4] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[5] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[6] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_1|cpgn:cpgn1
+a[0] => g[0].IN0
+a[1] => g[1].IN0
+a[1] => p[1].IN0
+a[2] => g[2].IN0
+a[2] => p[2].IN0
+a[3] => g[3].IN0
+a[3] => p[3].IN0
+b[0] => g[0].IN1
+b[1] => g[1].IN1
+b[1] => p[1].IN1
+b[2] => g[2].IN1
+b[2] => p[2].IN1
+b[3] => g[3].IN1
+b[3] => p[3].IN1
+c[0] <= <GND>
+c[1] <= g[0].DB_MAX_OUTPUT_PORT_TYPE
+c[2] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[3] <= c.DB_MAX_OUTPUT_PORT_TYPE
+c[4] <= c.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_1|bit_slice:bs0
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_1|bit_slice:bs1
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_1|bit_slice:bs2
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_1|bit_slice:bs3
+a => Add0.IN1
+b => Add0.IN2
+cin => Add1.IN4
+sum <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Add1.DB_MAX_OUTPUT_PORT_TYPE
+
+

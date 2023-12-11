@@ -1,0 +1,7 @@
+|p_8_3
+clk => dff_inst1.CLK
+rst => ~NO_FANOUT~
+led[0] <= dff_gen_1[15].dff_inst.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= dff_gen_2[9].dff_inst.DB_MAX_OUTPUT_PORT_TYPE
+
+

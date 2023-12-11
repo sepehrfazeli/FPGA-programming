@@ -1,0 +1,18 @@
+`timescale 1ns/1ps
+module led_sw(
+    output [9:0] LEDR,
+    input [9:0] sw
+);
+
+assign LEDR[0] = sw[9];
+assign LEDR[1] = sw[8];
+assign LEDR[2] = sw[7];
+assign LEDR[3] = sw[6];
+assign LEDR[4] = sw[5];
+assign LEDR[5] = sw[4];
+assign LEDR[6] = sw[3];
+assign LEDR[7] = sw[2];
+assign LEDR[8] = sw[1];
+assign LEDR[9] = sw[0];
+
+endmodule

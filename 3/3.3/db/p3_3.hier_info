@@ -1,0 +1,20 @@
+|p3_3
+sw[0] => LessThan0.IN16
+sw[0] => LessThan1.IN16
+sw[1] => LessThan0.IN15
+sw[1] => LessThan1.IN15
+sw[2] => LessThan0.IN14
+sw[2] => LessThan1.IN14
+sw[3] => LessThan0.IN13
+sw[3] => LessThan1.IN13
+sw[4] => LessThan0.IN12
+sw[4] => LessThan1.IN12
+sw[5] => LessThan0.IN11
+sw[5] => LessThan1.IN11
+sw[6] => LessThan0.IN10
+sw[6] => LessThan1.IN10
+sw[7] => LessThan0.IN9
+sw[7] => LessThan1.IN9
+led << led.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at p_11_2.sv(237): always construct contains both blocking and non-blocking assignments File: C:/Users/SFI19/Downloads/FPGA/11/11.2/p_11_2.sv Line: 237

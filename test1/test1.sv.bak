@@ -1,0 +1,35 @@
+module test1 (
+	input logic [3:0] sw, // Input switches representing CT, CL, OT, and OL
+	output logic VGA_B, // Blue LED
+	output logic VGA_R // Red LED
+
+);
+	// Define registers for sensor inputs
+	logic CT, CL, OT, OL;
+	logic [3:0] blue_condition;
+	logic [3:0] red_condition;
+
+	// Blue LED conditions
+	assign blue_condition[0] = CL & ~CT & ~OT & ~OL; // Only Coolant Level is low
+	assign blue_condition[1] = OL & ~CT & ~OT & ~CL; // Only Oil Level is low
+	assign blue_condition[2] = OT & ~OL & ~CT & ~CL; // Oil Temperature too high and Oil Level is OK
+	assign blue_condition[3] = CT & OL & ~OT & ~CL; // Coolant Temperature too high and Oil Level too low
+
+	// Red LED conditions
+	assign red_condition[0] = CT & CL; // Coolant Temperature too high and Coolant Level too low
+	assign red_condition[1] = OT & OL; // Oil Temperature too high and Oil Level too low
+	assign red_condition[2] = CT & OT; // Both Coolant and Oil Temperatures too high
+	assign red_condition[3] = CT & CL & OL & ~OT; // Coolant and Oil levels too low with high Coolant Temperature and OK Oil Temperature
+	
+	 // Register assignments
+    always @(sw) begin
+        CT <= sw[3]; // Coolant Temperature from switch 3
+        CL <= sw[2]; // Coolant Level from switch 2
+        OT <= sw[1]; // Oil Temperature from switch 1
+        OL <= sw[0]; // Oil Level from switch 0
+    end
+
+	assign VGA_B = blue_condition[0] | blue_condition[1] | blue_condition[2] | blue_condition[3];
+	assign VGA_R = red_condition[0] | red_condition[1] | red_condition[2] | red_condition[3];
+
+endmodule

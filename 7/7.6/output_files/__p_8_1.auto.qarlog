@@ -1,0 +1,19 @@
+Quartus Prime Archive log --	C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/__p_8_1.auto.qarlog
+
+Archive:	C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/__p_8_1.auto.qar
+Date:		Sat Nov 18 11:55:25 2023
+Quartus Prime		22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/db/p_8_1.cbx.xml
+C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/db/p_8_1.qpf
+C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/output_files/p_8_1.flow.rpt
+C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/output_files/p_8_1.map.rpt
+C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/output_files/p_8_1.map.summary
+C:/Users/SFI19/Downloads/FPGA/7/7.6/output_files/p_8_1.sv
+e:/intelfpga_lite/22.1std/quartus/bin64/assignment_defaults.qdf
+p_8_1.qsf
+	======= Total: 8 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

@@ -1,0 +1,17 @@
+module d_latch
+(
+	input logic clk ,
+	input logic d ,
+	output logic q
+) ;
+always_latch
+	if ( clk )
+		q <= d ;
+		
+always @ ( clk , a , b )
+	if ( clk )
+		q0 <= a & b ;	
+	else
+		q1 <= a | b ;
+		
+endmodule

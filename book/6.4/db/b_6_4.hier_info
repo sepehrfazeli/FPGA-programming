@@ -1,0 +1,16 @@
+|b_6_4
+clk => ~NO_FANOUT~
+btn[0] => Selector1.IN0
+btn[1] => Selector1.IN7
+btn[1] => Selector0.IN2
+btn[2] => Selector1.IN1
+btn[3] => Selector0.IN7
+btn[3] => Selector1.IN6
+btn[3] => pState[1].OUTPUTSELECT
+btn[3] => pState[0].OUTPUTSELECT
+led[0] <= Equal4.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= Equal5.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= Equal6.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= Equal7.DB_MAX_OUTPUT_PORT_TYPE
+
+

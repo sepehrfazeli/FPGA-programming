@@ -1,0 +1,1366 @@
+Timing Analyzer report for p_8_3
+Sun Nov 19 21:09:01 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1100mV 85C Model Fmax Summary
+  6. Timing Closure Recommendations
+  7. Slow 1100mV 85C Model Setup Summary
+  8. Slow 1100mV 85C Model Hold Summary
+  9. Slow 1100mV 85C Model Recovery Summary
+ 10. Slow 1100mV 85C Model Removal Summary
+ 11. Slow 1100mV 85C Model Minimum Pulse Width Summary
+ 12. Slow 1100mV 85C Model Metastability Summary
+ 13. Slow 1100mV 0C Model Fmax Summary
+ 14. Slow 1100mV 0C Model Setup Summary
+ 15. Slow 1100mV 0C Model Hold Summary
+ 16. Slow 1100mV 0C Model Recovery Summary
+ 17. Slow 1100mV 0C Model Removal Summary
+ 18. Slow 1100mV 0C Model Minimum Pulse Width Summary
+ 19. Slow 1100mV 0C Model Metastability Summary
+ 20. Fast 1100mV 85C Model Setup Summary
+ 21. Fast 1100mV 85C Model Hold Summary
+ 22. Fast 1100mV 85C Model Recovery Summary
+ 23. Fast 1100mV 85C Model Removal Summary
+ 24. Fast 1100mV 85C Model Minimum Pulse Width Summary
+ 25. Fast 1100mV 85C Model Metastability Summary
+ 26. Fast 1100mV 0C Model Setup Summary
+ 27. Fast 1100mV 0C Model Hold Summary
+ 28. Fast 1100mV 0C Model Recovery Summary
+ 29. Fast 1100mV 0C Model Removal Summary
+ 30. Fast 1100mV 0C Model Minimum Pulse Width Summary
+ 31. Fast 1100mV 0C Model Metastability Summary
+ 32. Multicorner Timing Analysis Summary
+ 33. Board Trace Model Assignments
+ 34. Input Transition Times
+ 35. Signal Integrity Metrics (Slow 1100mv 0c Model)
+ 36. Signal Integrity Metrics (Slow 1100mv 85c Model)
+ 37. Signal Integrity Metrics (Fast 1100mv 0c Model)
+ 38. Signal Integrity Metrics (Fast 1100mv 85c Model)
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Report TCCS
+ 42. Report RSKM
+ 43. Unconstrained Paths Summary
+ 44. Clock Status Summary
+ 45. Unconstrained Output Ports
+ 46. Unconstrained Output Ports
+ 47. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++--------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                        ;
++-----------------------+--------------------------------------------------------+
+; Quartus Prime Version ; Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
+; Revision Name         ; p_8_3                                                  ;
+; Device Family         ; Cyclone V                                              ;
+; Device Name           ; 5CSEMA5F31C6                                           ;
+; Timing Models         ; Final                                                  ;
+; Delay Model           ; Combined                                               ;
+; Rise/Fall Delays      ; Enabled                                                ;
++-----------------------+--------------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.11        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   2.2%      ;
+;     Processor 3            ;   2.2%      ;
+;     Processor 4            ;   2.1%      ;
+;     Processor 5            ;   2.1%      ;
+;     Processor 6            ;   2.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                         ;
++------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------+
+; Clock Name             ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                    ;
++------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------+
+; clk                    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                    ;
+; dff_gen_1[1].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[1].dff_inst }  ;
+; dff_gen_1[2].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[2].dff_inst }  ;
+; dff_gen_1[3].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[3].dff_inst }  ;
+; dff_gen_1[4].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[4].dff_inst }  ;
+; dff_gen_1[5].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[5].dff_inst }  ;
+; dff_gen_1[6].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[6].dff_inst }  ;
+; dff_gen_1[7].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[7].dff_inst }  ;
+; dff_gen_1[8].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[8].dff_inst }  ;
+; dff_gen_1[9].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[9].dff_inst }  ;
+; dff_gen_1[10].dff_inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[10].dff_inst } ;
+; dff_gen_1[11].dff_inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[11].dff_inst } ;
+; dff_gen_1[12].dff_inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[12].dff_inst } ;
+; dff_gen_1[13].dff_inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[13].dff_inst } ;
+; dff_gen_1[14].dff_inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[14].dff_inst } ;
+; dff_gen_1[15].dff_inst ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_1[15].dff_inst } ;
+; dff_gen_2[1].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[1].dff_inst }  ;
+; dff_gen_2[2].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[2].dff_inst }  ;
+; dff_gen_2[3].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[3].dff_inst }  ;
+; dff_gen_2[4].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[4].dff_inst }  ;
+; dff_gen_2[5].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[5].dff_inst }  ;
+; dff_gen_2[6].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[6].dff_inst }  ;
+; dff_gen_2[7].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[7].dff_inst }  ;
+; dff_gen_2[8].dff_inst  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_gen_2[8].dff_inst }  ;
+; dff_inst1              ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_inst1 }              ;
+; dff_inst2              ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { dff_inst2 }              ;
++------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------------+
+
+
++-------------------------------------------------------------+
+; Slow 1100mV 85C Model Fmax Summary                          ;
++------------+-----------------+-----------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name            ; Note ;
++------------+-----------------+-----------------------+------+
+; 664.01 MHz ; 664.01 MHz      ; dff_gen_2[8].dff_inst ;      ;
++------------+-----------------+-----------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
+----------------------------------
+; Timing Closure Recommendations ;
+----------------------------------
+HTML report is unavailable in plain text report export.
+
+
++-------------------------------------------------+
+; Slow 1100mV 85C Model Setup Summary             ;
++------------------------+--------+---------------+
+; Clock                  ; Slack  ; End Point TNS ;
++------------------------+--------+---------------+
+; clk                    ; -2.354 ; -2.354        ;
+; dff_gen_1[15].dff_inst ; -1.991 ; -1.991        ;
+; dff_gen_1[11].dff_inst ; -1.945 ; -1.945        ;
+; dff_gen_1[3].dff_inst  ; -1.794 ; -1.794        ;
+; dff_gen_2[1].dff_inst  ; -1.777 ; -1.777        ;
+; dff_gen_1[8].dff_inst  ; -1.774 ; -1.774        ;
+; dff_gen_1[7].dff_inst  ; -1.702 ; -1.702        ;
+; dff_gen_2[5].dff_inst  ; -1.692 ; -1.692        ;
+; dff_gen_1[5].dff_inst  ; -1.689 ; -1.689        ;
+; dff_gen_1[1].dff_inst  ; -1.578 ; -1.578        ;
+; dff_gen_2[4].dff_inst  ; -1.563 ; -1.563        ;
+; dff_gen_1[13].dff_inst ; -1.561 ; -1.561        ;
+; dff_gen_1[9].dff_inst  ; -1.547 ; -1.547        ;
+; dff_gen_1[4].dff_inst  ; -1.504 ; -1.504        ;
+; dff_inst1              ; -1.488 ; -1.488        ;
+; dff_gen_2[2].dff_inst  ; -1.459 ; -1.459        ;
+; dff_gen_1[10].dff_inst ; -1.449 ; -1.449        ;
+; dff_gen_2[6].dff_inst  ; -1.432 ; -1.432        ;
+; dff_gen_2[7].dff_inst  ; -1.432 ; -1.432        ;
+; dff_gen_1[2].dff_inst  ; -1.430 ; -1.430        ;
+; dff_gen_2[3].dff_inst  ; -1.415 ; -1.415        ;
+; dff_gen_1[6].dff_inst  ; -1.405 ; -1.405        ;
+; dff_gen_1[14].dff_inst ; -1.382 ; -1.382        ;
+; dff_inst2              ; -1.382 ; -1.382        ;
+; dff_gen_1[12].dff_inst ; -1.218 ; -1.218        ;
+; dff_gen_2[8].dff_inst  ; -0.506 ; -0.506        ;
++------------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow 1100mV 85C Model Hold Summary             ;
++------------------------+-------+---------------+
+; Clock                  ; Slack ; End Point TNS ;
++------------------------+-------+---------------+
+; dff_gen_1[12].dff_inst ; 0.175 ; 0.000         ;
+; dff_inst2              ; 0.404 ; 0.000         ;
+; dff_gen_2[8].dff_inst  ; 0.421 ; 0.000         ;
+; dff_gen_1[14].dff_inst ; 0.464 ; 0.000         ;
+; dff_gen_1[6].dff_inst  ; 0.482 ; 0.000         ;
+; dff_gen_1[9].dff_inst  ; 0.520 ; 0.000         ;
+; dff_gen_2[6].dff_inst  ; 0.530 ; 0.000         ;
+; dff_gen_2[2].dff_inst  ; 0.531 ; 0.000         ;
+; dff_gen_2[3].dff_inst  ; 0.531 ; 0.000         ;
+; dff_gen_1[2].dff_inst  ; 0.535 ; 0.000         ;
+; dff_inst1              ; 0.547 ; 0.000         ;
+; dff_gen_1[10].dff_inst ; 0.550 ; 0.000         ;
+; dff_gen_1[1].dff_inst  ; 0.552 ; 0.000         ;
+; dff_gen_2[7].dff_inst  ; 0.556 ; 0.000         ;
+; dff_gen_1[4].dff_inst  ; 0.580 ; 0.000         ;
+; dff_gen_2[4].dff_inst  ; 0.627 ; 0.000         ;
+; dff_gen_1[5].dff_inst  ; 0.641 ; 0.000         ;
+; dff_gen_1[11].dff_inst ; 0.649 ; 0.000         ;
+; dff_gen_2[5].dff_inst  ; 0.649 ; 0.000         ;
+; dff_gen_2[1].dff_inst  ; 0.663 ; 0.000         ;
+; dff_gen_1[13].dff_inst ; 0.666 ; 0.000         ;
+; dff_gen_1[8].dff_inst  ; 0.673 ; 0.000         ;
+; dff_gen_1[7].dff_inst  ; 0.675 ; 0.000         ;
+; clk                    ; 0.728 ; 0.000         ;
+; dff_gen_1[3].dff_inst  ; 0.729 ; 0.000         ;
+; dff_gen_1[15].dff_inst ; 0.914 ; 0.000         ;
++------------------------+-------+---------------+
+
+
+------------------------------------------
+; Slow 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Slow 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Slow 1100mV 85C Model Minimum Pulse Width Summary ;
++------------------------+--------+-----------------+
+; Clock                  ; Slack  ; End Point TNS   ;
++------------------------+--------+-----------------+
+; clk                    ; -0.402 ; -0.796          ;
+; dff_gen_2[1].dff_inst  ; -0.394 ; -0.585          ;
+; dff_gen_1[11].dff_inst ; -0.394 ; -0.575          ;
+; dff_gen_1[8].dff_inst  ; -0.394 ; -0.537          ;
+; dff_gen_1[15].dff_inst ; -0.394 ; -0.530          ;
+; dff_gen_1[3].dff_inst  ; -0.394 ; -0.530          ;
+; dff_gen_2[5].dff_inst  ; -0.394 ; -0.527          ;
+; dff_gen_1[1].dff_inst  ; -0.394 ; -0.526          ;
+; dff_gen_1[12].dff_inst ; -0.394 ; -0.525          ;
+; dff_gen_1[5].dff_inst  ; -0.394 ; -0.524          ;
+; dff_gen_1[7].dff_inst  ; -0.394 ; -0.524          ;
+; dff_gen_1[9].dff_inst  ; -0.394 ; -0.523          ;
+; dff_gen_2[8].dff_inst  ; -0.394 ; -0.513          ;
+; dff_gen_1[14].dff_inst ; -0.394 ; -0.511          ;
+; dff_inst1              ; -0.394 ; -0.511          ;
+; dff_inst2              ; -0.394 ; -0.511          ;
+; dff_gen_1[10].dff_inst ; -0.394 ; -0.510          ;
+; dff_gen_1[2].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_1[4].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_1[6].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_2[2].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_2[3].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_2[4].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_2[6].dff_inst  ; -0.394 ; -0.510          ;
+; dff_gen_1[13].dff_inst ; -0.394 ; -0.509          ;
+; dff_gen_2[7].dff_inst  ; -0.394 ; -0.508          ;
++------------------------+--------+-----------------+
+
+
+-----------------------------------------------
+; Slow 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-------------------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary                           ;
++------------+-----------------+-----------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name            ; Note ;
++------------+-----------------+-----------------------+------+
+; 680.27 MHz ; 680.27 MHz      ; dff_gen_2[8].dff_inst ;      ;
++------------+-----------------+-----------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------------+
+; Slow 1100mV 0C Model Setup Summary              ;
++------------------------+--------+---------------+
+; Clock                  ; Slack  ; End Point TNS ;
++------------------------+--------+---------------+
+; clk                    ; -2.263 ; -2.263        ;
+; dff_gen_1[15].dff_inst ; -2.063 ; -2.063        ;
+; dff_gen_1[11].dff_inst ; -1.987 ; -1.987        ;
+; dff_gen_1[8].dff_inst  ; -1.772 ; -1.772        ;
+; dff_gen_2[1].dff_inst  ; -1.771 ; -1.771        ;
+; dff_gen_1[3].dff_inst  ; -1.762 ; -1.762        ;
+; dff_gen_2[5].dff_inst  ; -1.689 ; -1.689        ;
+; dff_gen_1[5].dff_inst  ; -1.676 ; -1.676        ;
+; dff_gen_1[7].dff_inst  ; -1.664 ; -1.664        ;
+; dff_gen_2[4].dff_inst  ; -1.636 ; -1.636        ;
+; dff_gen_1[13].dff_inst ; -1.585 ; -1.585        ;
+; dff_inst1              ; -1.576 ; -1.576        ;
+; dff_gen_1[4].dff_inst  ; -1.568 ; -1.568        ;
+; dff_gen_1[9].dff_inst  ; -1.539 ; -1.539        ;
+; dff_gen_1[1].dff_inst  ; -1.538 ; -1.538        ;
+; dff_gen_2[2].dff_inst  ; -1.530 ; -1.530        ;
+; dff_gen_1[10].dff_inst ; -1.523 ; -1.523        ;
+; dff_gen_1[2].dff_inst  ; -1.521 ; -1.521        ;
+; dff_gen_2[6].dff_inst  ; -1.509 ; -1.509        ;
+; dff_gen_1[6].dff_inst  ; -1.496 ; -1.496        ;
+; dff_gen_1[14].dff_inst ; -1.455 ; -1.455        ;
+; dff_inst2              ; -1.454 ; -1.454        ;
+; dff_gen_2[7].dff_inst  ; -1.452 ; -1.452        ;
+; dff_gen_2[3].dff_inst  ; -1.441 ; -1.441        ;
+; dff_gen_1[12].dff_inst ; -1.313 ; -1.313        ;
+; dff_gen_2[8].dff_inst  ; -0.470 ; -0.470        ;
++------------------------+--------+---------------+
+
+
++------------------------------------------------+
+; Slow 1100mV 0C Model Hold Summary              ;
++------------------------+-------+---------------+
+; Clock                  ; Slack ; End Point TNS ;
++------------------------+-------+---------------+
+; dff_gen_1[12].dff_inst ; 0.279 ; 0.000         ;
+; dff_gen_2[8].dff_inst  ; 0.380 ; 0.000         ;
+; dff_inst2              ; 0.483 ; 0.000         ;
+; dff_gen_1[9].dff_inst  ; 0.517 ; 0.000         ;
+; dff_gen_1[14].dff_inst ; 0.550 ; 0.000         ;
+; dff_gen_1[6].dff_inst  ; 0.560 ; 0.000         ;
+; dff_gen_1[1].dff_inst  ; 0.565 ; 0.000         ;
+; dff_gen_2[3].dff_inst  ; 0.573 ; 0.000         ;
+; dff_gen_2[2].dff_inst  ; 0.596 ; 0.000         ;
+; dff_gen_2[7].dff_inst  ; 0.597 ; 0.000         ;
+; dff_gen_2[6].dff_inst  ; 0.612 ; 0.000         ;
+; dff_gen_1[2].dff_inst  ; 0.621 ; 0.000         ;
+; dff_inst1              ; 0.623 ; 0.000         ;
+; dff_gen_1[10].dff_inst ; 0.624 ; 0.000         ;
+; dff_gen_1[4].dff_inst  ; 0.654 ; 0.000         ;
+; dff_gen_1[7].dff_inst  ; 0.665 ; 0.000         ;
+; dff_gen_1[5].dff_inst  ; 0.670 ; 0.000         ;
+; dff_gen_2[5].dff_inst  ; 0.670 ; 0.000         ;
+; dff_gen_2[1].dff_inst  ; 0.686 ; 0.000         ;
+; dff_gen_1[11].dff_inst ; 0.687 ; 0.000         ;
+; clk                    ; 0.688 ; 0.000         ;
+; dff_gen_2[4].dff_inst  ; 0.695 ; 0.000         ;
+; dff_gen_1[13].dff_inst ; 0.703 ; 0.000         ;
+; dff_gen_1[8].dff_inst  ; 0.714 ; 0.000         ;
+; dff_gen_1[3].dff_inst  ; 0.729 ; 0.000         ;
+; dff_gen_1[15].dff_inst ; 0.983 ; 0.000         ;
++------------------------+-------+---------------+
+
+
+-----------------------------------------
+; Slow 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Slow 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Slow 1100mV 0C Model Minimum Pulse Width Summary ;
++------------------------+--------+----------------+
+; Clock                  ; Slack  ; End Point TNS  ;
++------------------------+--------+----------------+
+; clk                    ; -0.394 ; -0.776         ;
+; dff_gen_1[11].dff_inst ; -0.394 ; -0.563         ;
+; dff_gen_2[1].dff_inst  ; -0.394 ; -0.555         ;
+; dff_gen_1[8].dff_inst  ; -0.394 ; -0.536         ;
+; dff_gen_1[15].dff_inst ; -0.394 ; -0.524         ;
+; dff_gen_1[3].dff_inst  ; -0.394 ; -0.524         ;
+; dff_gen_1[12].dff_inst ; -0.394 ; -0.520         ;
+; dff_gen_2[8].dff_inst  ; -0.394 ; -0.520         ;
+; dff_gen_1[14].dff_inst ; -0.394 ; -0.516         ;
+; dff_gen_1[1].dff_inst  ; -0.394 ; -0.516         ;
+; dff_gen_2[5].dff_inst  ; -0.394 ; -0.516         ;
+; dff_inst2              ; -0.394 ; -0.516         ;
+; dff_gen_1[10].dff_inst ; -0.394 ; -0.514         ;
+; dff_gen_1[2].dff_inst  ; -0.394 ; -0.514         ;
+; dff_gen_1[5].dff_inst  ; -0.394 ; -0.514         ;
+; dff_gen_1[6].dff_inst  ; -0.394 ; -0.514         ;
+; dff_gen_1[7].dff_inst  ; -0.394 ; -0.514         ;
+; dff_gen_1[9].dff_inst  ; -0.394 ; -0.514         ;
+; dff_gen_2[6].dff_inst  ; -0.394 ; -0.514         ;
+; dff_gen_2[4].dff_inst  ; -0.394 ; -0.513         ;
+; dff_inst1              ; -0.394 ; -0.513         ;
+; dff_gen_1[4].dff_inst  ; -0.394 ; -0.512         ;
+; dff_gen_2[2].dff_inst  ; -0.394 ; -0.512         ;
+; dff_gen_2[3].dff_inst  ; -0.394 ; -0.512         ;
+; dff_gen_1[13].dff_inst ; -0.394 ; -0.511         ;
+; dff_gen_2[7].dff_inst  ; -0.394 ; -0.511         ;
++------------------------+--------+----------------+
+
+
+----------------------------------------------
+; Slow 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-------------------------------------------------+
+; Fast 1100mV 85C Model Setup Summary             ;
++------------------------+--------+---------------+
+; Clock                  ; Slack  ; End Point TNS ;
++------------------------+--------+---------------+
+; clk                    ; -1.803 ; -1.803        ;
+; dff_gen_1[3].dff_inst  ; -1.238 ; -1.238        ;
+; dff_gen_1[7].dff_inst  ; -1.208 ; -1.208        ;
+; dff_gen_1[11].dff_inst ; -1.187 ; -1.187        ;
+; dff_gen_1[8].dff_inst  ; -1.153 ; -1.153        ;
+; dff_gen_1[15].dff_inst ; -1.127 ; -1.127        ;
+; dff_gen_1[5].dff_inst  ; -1.125 ; -1.125        ;
+; dff_gen_2[5].dff_inst  ; -1.116 ; -1.116        ;
+; dff_gen_1[9].dff_inst  ; -1.057 ; -1.057        ;
+; dff_gen_1[1].dff_inst  ; -1.054 ; -1.054        ;
+; dff_gen_2[1].dff_inst  ; -1.037 ; -1.037        ;
+; dff_gen_1[13].dff_inst ; -0.885 ; -0.885        ;
+; dff_gen_2[7].dff_inst  ; -0.853 ; -0.853        ;
+; dff_gen_2[4].dff_inst  ; -0.820 ; -0.820        ;
+; dff_gen_2[3].dff_inst  ; -0.803 ; -0.803        ;
+; dff_inst1              ; -0.794 ; -0.794        ;
+; dff_gen_1[4].dff_inst  ; -0.787 ; -0.787        ;
+; dff_gen_1[2].dff_inst  ; -0.761 ; -0.761        ;
+; dff_gen_1[10].dff_inst ; -0.749 ; -0.749        ;
+; dff_gen_2[2].dff_inst  ; -0.746 ; -0.746        ;
+; dff_gen_1[6].dff_inst  ; -0.734 ; -0.734        ;
+; dff_gen_2[6].dff_inst  ; -0.732 ; -0.732        ;
+; dff_gen_1[14].dff_inst ; -0.715 ; -0.715        ;
+; dff_inst2              ; -0.706 ; -0.706        ;
+; dff_gen_1[12].dff_inst ; -0.626 ; -0.626        ;
+; dff_gen_2[8].dff_inst  ; -0.069 ; -0.069        ;
++------------------------+--------+---------------+
+
+
++-------------------------------------------------+
+; Fast 1100mV 85C Model Hold Summary              ;
++------------------------+--------+---------------+
+; Clock                  ; Slack  ; End Point TNS ;
++------------------------+--------+---------------+
+; dff_gen_1[12].dff_inst ; -0.082 ; -0.082        ;
+; dff_inst2              ; 0.028  ; 0.000         ;
+; dff_gen_1[14].dff_inst ; 0.070  ; 0.000         ;
+; dff_gen_1[6].dff_inst  ; 0.088  ; 0.000         ;
+; dff_gen_2[2].dff_inst  ; 0.093  ; 0.000         ;
+; dff_gen_2[6].dff_inst  ; 0.098  ; 0.000         ;
+; dff_gen_1[10].dff_inst ; 0.119  ; 0.000         ;
+; dff_gen_1[2].dff_inst  ; 0.130  ; 0.000         ;
+; dff_inst1              ; 0.134  ; 0.000         ;
+; dff_gen_1[4].dff_inst  ; 0.139  ; 0.000         ;
+; dff_gen_2[4].dff_inst  ; 0.165  ; 0.000         ;
+; dff_gen_2[8].dff_inst  ; 0.194  ; 0.000         ;
+; dff_gen_2[3].dff_inst  ; 0.196  ; 0.000         ;
+; dff_gen_2[7].dff_inst  ; 0.246  ; 0.000         ;
+; dff_gen_1[11].dff_inst ; 0.249  ; 0.000         ;
+; dff_gen_2[1].dff_inst  ; 0.289  ; 0.000         ;
+; dff_gen_1[9].dff_inst  ; 0.290  ; 0.000         ;
+; dff_gen_1[13].dff_inst ; 0.299  ; 0.000         ;
+; dff_gen_1[1].dff_inst  ; 0.303  ; 0.000         ;
+; dff_gen_1[5].dff_inst  ; 0.372  ; 0.000         ;
+; dff_gen_1[8].dff_inst  ; 0.372  ; 0.000         ;
+; dff_gen_2[5].dff_inst  ; 0.375  ; 0.000         ;
+; dff_gen_1[15].dff_inst ; 0.396  ; 0.000         ;
+; dff_gen_1[7].dff_inst  ; 0.435  ; 0.000         ;
+; dff_gen_1[3].dff_inst  ; 0.489  ; 0.000         ;
+; clk                    ; 0.737  ; 0.000         ;
++------------------------+--------+---------------+
+
+
+------------------------------------------
+; Fast 1100mV 85C Model Recovery Summary ;
+------------------------------------------
+No paths to report.
+
+
+-----------------------------------------
+; Fast 1100mV 85C Model Removal Summary ;
+-----------------------------------------
+No paths to report.
+
+
++---------------------------------------------------+
+; Fast 1100mV 85C Model Minimum Pulse Width Summary ;
++------------------------+--------+-----------------+
+; Clock                  ; Slack  ; End Point TNS   ;
++------------------------+--------+-----------------+
+; clk                    ; -0.381 ; -0.410          ;
+; dff_gen_2[1].dff_inst  ; 0.030  ; 0.000           ;
+; dff_gen_1[8].dff_inst  ; 0.073  ; 0.000           ;
+; dff_gen_1[15].dff_inst ; 0.099  ; 0.000           ;
+; dff_gen_1[11].dff_inst ; 0.100  ; 0.000           ;
+; dff_gen_2[8].dff_inst  ; 0.128  ; 0.000           ;
+; dff_gen_1[14].dff_inst ; 0.130  ; 0.000           ;
+; dff_inst2              ; 0.130  ; 0.000           ;
+; dff_gen_1[3].dff_inst  ; 0.131  ; 0.000           ;
+; dff_gen_2[5].dff_inst  ; 0.134  ; 0.000           ;
+; dff_gen_1[1].dff_inst  ; 0.140  ; 0.000           ;
+; dff_gen_1[9].dff_inst  ; 0.140  ; 0.000           ;
+; dff_gen_2[4].dff_inst  ; 0.143  ; 0.000           ;
+; dff_gen_1[5].dff_inst  ; 0.145  ; 0.000           ;
+; dff_gen_2[2].dff_inst  ; 0.145  ; 0.000           ;
+; dff_inst1              ; 0.145  ; 0.000           ;
+; dff_gen_1[12].dff_inst ; 0.146  ; 0.000           ;
+; dff_gen_1[6].dff_inst  ; 0.146  ; 0.000           ;
+; dff_gen_1[10].dff_inst ; 0.147  ; 0.000           ;
+; dff_gen_2[3].dff_inst  ; 0.147  ; 0.000           ;
+; dff_gen_2[6].dff_inst  ; 0.147  ; 0.000           ;
+; dff_gen_1[2].dff_inst  ; 0.148  ; 0.000           ;
+; dff_gen_1[4].dff_inst  ; 0.151  ; 0.000           ;
+; dff_gen_1[7].dff_inst  ; 0.151  ; 0.000           ;
+; dff_gen_1[13].dff_inst ; 0.160  ; 0.000           ;
+; dff_gen_2[7].dff_inst  ; 0.163  ; 0.000           ;
++------------------------+--------+-----------------+
+
+
+-----------------------------------------------
+; Fast 1100mV 85C Model Metastability Summary ;
+-----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++-------------------------------------------------+
+; Fast 1100mV 0C Model Setup Summary              ;
++------------------------+--------+---------------+
+; Clock                  ; Slack  ; End Point TNS ;
++------------------------+--------+---------------+
+; clk                    ; -1.478 ; -1.478        ;
+; dff_gen_1[3].dff_inst  ; -1.100 ; -1.100        ;
+; dff_gen_1[11].dff_inst ; -1.079 ; -1.079        ;
+; dff_gen_1[7].dff_inst  ; -1.068 ; -1.068        ;
+; dff_gen_1[15].dff_inst ; -1.049 ; -1.049        ;
+; dff_gen_1[8].dff_inst  ; -1.035 ; -1.035        ;
+; dff_gen_1[5].dff_inst  ; -1.007 ; -1.007        ;
+; dff_gen_2[5].dff_inst  ; -1.005 ; -1.005        ;
+; dff_gen_1[9].dff_inst  ; -0.946 ; -0.946        ;
+; dff_gen_2[1].dff_inst  ; -0.945 ; -0.945        ;
+; dff_gen_1[1].dff_inst  ; -0.933 ; -0.933        ;
+; dff_gen_1[13].dff_inst ; -0.821 ; -0.821        ;
+; dff_gen_2[7].dff_inst  ; -0.780 ; -0.780        ;
+; dff_gen_2[4].dff_inst  ; -0.777 ; -0.777        ;
+; dff_inst1              ; -0.759 ; -0.759        ;
+; dff_gen_1[4].dff_inst  ; -0.744 ; -0.744        ;
+; dff_gen_2[3].dff_inst  ; -0.738 ; -0.738        ;
+; dff_gen_1[2].dff_inst  ; -0.727 ; -0.727        ;
+; dff_gen_1[10].dff_inst ; -0.713 ; -0.713        ;
+; dff_gen_2[2].dff_inst  ; -0.711 ; -0.711        ;
+; dff_gen_1[6].dff_inst  ; -0.708 ; -0.708        ;
+; dff_gen_2[6].dff_inst  ; -0.697 ; -0.697        ;
+; dff_gen_1[14].dff_inst ; -0.682 ; -0.682        ;
+; dff_inst2              ; -0.673 ; -0.673        ;
+; dff_gen_1[12].dff_inst ; -0.605 ; -0.605        ;
+; dff_gen_2[8].dff_inst  ; -0.023 ; -0.023        ;
++------------------------+--------+---------------+
+
+
++-------------------------------------------------+
+; Fast 1100mV 0C Model Hold Summary               ;
++------------------------+--------+---------------+
+; Clock                  ; Slack  ; End Point TNS ;
++------------------------+--------+---------------+
+; dff_gen_1[12].dff_inst ; -0.074 ; -0.074        ;
+; dff_inst2              ; 0.024  ; 0.000         ;
+; dff_gen_1[14].dff_inst ; 0.060  ; 0.000         ;
+; dff_gen_1[6].dff_inst  ; 0.072  ; 0.000         ;
+; dff_gen_2[2].dff_inst  ; 0.076  ; 0.000         ;
+; dff_gen_2[6].dff_inst  ; 0.084  ; 0.000         ;
+; dff_gen_1[10].dff_inst ; 0.099  ; 0.000         ;
+; dff_gen_1[2].dff_inst  ; 0.111  ; 0.000         ;
+; dff_inst1              ; 0.112  ; 0.000         ;
+; dff_gen_1[4].dff_inst  ; 0.116  ; 0.000         ;
+; dff_gen_2[4].dff_inst  ; 0.137  ; 0.000         ;
+; dff_gen_2[3].dff_inst  ; 0.148  ; 0.000         ;
+; dff_gen_2[8].dff_inst  ; 0.161  ; 0.000         ;
+; dff_gen_1[11].dff_inst ; 0.192  ; 0.000         ;
+; dff_gen_2[7].dff_inst  ; 0.194  ; 0.000         ;
+; dff_gen_1[9].dff_inst  ; 0.212  ; 0.000         ;
+; dff_gen_2[1].dff_inst  ; 0.232  ; 0.000         ;
+; dff_gen_1[1].dff_inst  ; 0.235  ; 0.000         ;
+; dff_gen_1[13].dff_inst ; 0.248  ; 0.000         ;
+; dff_gen_2[5].dff_inst  ; 0.304  ; 0.000         ;
+; dff_gen_1[5].dff_inst  ; 0.305  ; 0.000         ;
+; dff_gen_1[8].dff_inst  ; 0.308  ; 0.000         ;
+; dff_gen_1[15].dff_inst ; 0.341  ; 0.000         ;
+; dff_gen_1[7].dff_inst  ; 0.342  ; 0.000         ;
+; dff_gen_1[3].dff_inst  ; 0.399  ; 0.000         ;
+; clk                    ; 0.484  ; 0.000         ;
++------------------------+--------+---------------+
+
+
+-----------------------------------------
+; Fast 1100mV 0C Model Recovery Summary ;
+-----------------------------------------
+No paths to report.
+
+
+----------------------------------------
+; Fast 1100mV 0C Model Removal Summary ;
+----------------------------------------
+No paths to report.
+
+
++--------------------------------------------------+
+; Fast 1100mV 0C Model Minimum Pulse Width Summary ;
++------------------------+--------+----------------+
+; Clock                  ; Slack  ; End Point TNS  ;
++------------------------+--------+----------------+
+; clk                    ; -0.365 ; -0.388         ;
+; dff_gen_2[1].dff_inst  ; 0.072  ; 0.000          ;
+; dff_gen_1[8].dff_inst  ; 0.091  ; 0.000          ;
+; dff_gen_1[11].dff_inst ; 0.098  ; 0.000          ;
+; dff_gen_1[15].dff_inst ; 0.109  ; 0.000          ;
+; dff_gen_2[8].dff_inst  ; 0.130  ; 0.000          ;
+; dff_gen_1[14].dff_inst ; 0.131  ; 0.000          ;
+; dff_inst2              ; 0.131  ; 0.000          ;
+; dff_gen_1[3].dff_inst  ; 0.143  ; 0.000          ;
+; dff_gen_2[4].dff_inst  ; 0.145  ; 0.000          ;
+; dff_gen_2[5].dff_inst  ; 0.145  ; 0.000          ;
+; dff_gen_1[6].dff_inst  ; 0.146  ; 0.000          ;
+; dff_gen_2[3].dff_inst  ; 0.146  ; 0.000          ;
+; dff_gen_2[2].dff_inst  ; 0.147  ; 0.000          ;
+; dff_inst1              ; 0.147  ; 0.000          ;
+; dff_gen_1[2].dff_inst  ; 0.148  ; 0.000          ;
+; dff_gen_1[9].dff_inst  ; 0.148  ; 0.000          ;
+; dff_gen_1[10].dff_inst ; 0.149  ; 0.000          ;
+; dff_gen_1[1].dff_inst  ; 0.149  ; 0.000          ;
+; dff_gen_2[6].dff_inst  ; 0.149  ; 0.000          ;
+; dff_gen_1[4].dff_inst  ; 0.150  ; 0.000          ;
+; dff_gen_1[12].dff_inst ; 0.152  ; 0.000          ;
+; dff_gen_1[5].dff_inst  ; 0.153  ; 0.000          ;
+; dff_gen_1[7].dff_inst  ; 0.156  ; 0.000          ;
+; dff_gen_1[13].dff_inst ; 0.161  ; 0.000          ;
+; dff_gen_2[7].dff_inst  ; 0.162  ; 0.000          ;
++------------------------+--------+----------------+
+
+
+----------------------------------------------
+; Fast 1100mV 0C Model Metastability Summary ;
+----------------------------------------------
+Design MTBF is not calculated because the design doesn't meet its timing requirements.
+
+
+
++---------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                   ;
++-------------------------+---------+--------+----------+---------+---------------------+
+; Clock                   ; Setup   ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------------+---------+--------+----------+---------+---------------------+
+; Worst-case Slack        ; -2.354  ; -0.082 ; N/A      ; N/A     ; -0.402              ;
+;  clk                    ; -2.354  ; 0.484  ; N/A      ; N/A     ; -0.402              ;
+;  dff_gen_1[10].dff_inst ; -1.523  ; 0.099  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[11].dff_inst ; -1.987  ; 0.192  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[12].dff_inst ; -1.313  ; -0.082 ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[13].dff_inst ; -1.585  ; 0.248  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[14].dff_inst ; -1.455  ; 0.060  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[15].dff_inst ; -2.063  ; 0.341  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[1].dff_inst  ; -1.578  ; 0.235  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[2].dff_inst  ; -1.521  ; 0.111  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[3].dff_inst  ; -1.794  ; 0.399  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[4].dff_inst  ; -1.568  ; 0.116  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[5].dff_inst  ; -1.689  ; 0.305  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[6].dff_inst  ; -1.496  ; 0.072  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[7].dff_inst  ; -1.702  ; 0.342  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[8].dff_inst  ; -1.774  ; 0.308  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_1[9].dff_inst  ; -1.547  ; 0.212  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[1].dff_inst  ; -1.777  ; 0.232  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[2].dff_inst  ; -1.530  ; 0.076  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[3].dff_inst  ; -1.441  ; 0.148  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[4].dff_inst  ; -1.636  ; 0.137  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[5].dff_inst  ; -1.692  ; 0.304  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[6].dff_inst  ; -1.509  ; 0.084  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[7].dff_inst  ; -1.452  ; 0.194  ; N/A      ; N/A     ; -0.394              ;
+;  dff_gen_2[8].dff_inst  ; -0.506  ; 0.161  ; N/A      ; N/A     ; -0.394              ;
+;  dff_inst1              ; -1.576  ; 0.112  ; N/A      ; N/A     ; -0.394              ;
+;  dff_inst2              ; -1.454  ; 0.024  ; N/A      ; N/A     ; -0.394              ;
+; Design-wide TNS         ; -41.253 ; -0.082 ; 0.0      ; 0.0     ; -13.845             ;
+;  clk                    ; -2.354  ; 0.000  ; N/A      ; N/A     ; -0.796              ;
+;  dff_gen_1[10].dff_inst ; -1.523  ; 0.000  ; N/A      ; N/A     ; -0.514              ;
+;  dff_gen_1[11].dff_inst ; -1.987  ; 0.000  ; N/A      ; N/A     ; -0.575              ;
+;  dff_gen_1[12].dff_inst ; -1.313  ; -0.082 ; N/A      ; N/A     ; -0.525              ;
+;  dff_gen_1[13].dff_inst ; -1.585  ; 0.000  ; N/A      ; N/A     ; -0.511              ;
+;  dff_gen_1[14].dff_inst ; -1.455  ; 0.000  ; N/A      ; N/A     ; -0.516              ;
+;  dff_gen_1[15].dff_inst ; -2.063  ; 0.000  ; N/A      ; N/A     ; -0.530              ;
+;  dff_gen_1[1].dff_inst  ; -1.578  ; 0.000  ; N/A      ; N/A     ; -0.526              ;
+;  dff_gen_1[2].dff_inst  ; -1.521  ; 0.000  ; N/A      ; N/A     ; -0.514              ;
+;  dff_gen_1[3].dff_inst  ; -1.794  ; 0.000  ; N/A      ; N/A     ; -0.530              ;
+;  dff_gen_1[4].dff_inst  ; -1.568  ; 0.000  ; N/A      ; N/A     ; -0.512              ;
+;  dff_gen_1[5].dff_inst  ; -1.689  ; 0.000  ; N/A      ; N/A     ; -0.524              ;
+;  dff_gen_1[6].dff_inst  ; -1.496  ; 0.000  ; N/A      ; N/A     ; -0.514              ;
+;  dff_gen_1[7].dff_inst  ; -1.702  ; 0.000  ; N/A      ; N/A     ; -0.524              ;
+;  dff_gen_1[8].dff_inst  ; -1.774  ; 0.000  ; N/A      ; N/A     ; -0.537              ;
+;  dff_gen_1[9].dff_inst  ; -1.547  ; 0.000  ; N/A      ; N/A     ; -0.523              ;
+;  dff_gen_2[1].dff_inst  ; -1.777  ; 0.000  ; N/A      ; N/A     ; -0.585              ;
+;  dff_gen_2[2].dff_inst  ; -1.530  ; 0.000  ; N/A      ; N/A     ; -0.512              ;
+;  dff_gen_2[3].dff_inst  ; -1.441  ; 0.000  ; N/A      ; N/A     ; -0.512              ;
+;  dff_gen_2[4].dff_inst  ; -1.636  ; 0.000  ; N/A      ; N/A     ; -0.513              ;
+;  dff_gen_2[5].dff_inst  ; -1.692  ; 0.000  ; N/A      ; N/A     ; -0.527              ;
+;  dff_gen_2[6].dff_inst  ; -1.509  ; 0.000  ; N/A      ; N/A     ; -0.514              ;
+;  dff_gen_2[7].dff_inst  ; -1.452  ; 0.000  ; N/A      ; N/A     ; -0.511              ;
+;  dff_gen_2[8].dff_inst  ; -0.506  ; 0.000  ; N/A      ; N/A     ; -0.520              ;
+;  dff_inst1              ; -1.576  ; 0.000  ; N/A      ; N/A     ; -0.513              ;
+;  dff_inst2              ; -1.454  ; 0.000  ; N/A      ; N/A     ; -0.516              ;
++-------------------------+---------+--------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                                                             ;
++--------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; Pin    ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ; EBD File Name ; EBD Signal Name ; EBD Far-end ;
++--------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+; led[0] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; led[1] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
++--------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
+
+
++--------------------------------------------------------+
+; Input Transition Times                                 ;
++-----+--------------+-----------------+-----------------+
+; Pin ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-----+--------------+-----------------+-----------------+
+; rst ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; clk ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-----+--------------+-----------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.6e-07 V                    ; 2.41 V              ; -0.0463 V           ; 0.201 V                              ; 0.131 V                              ; 4.61e-10 s                  ; 4.53e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.6e-07 V                   ; 2.41 V             ; -0.0463 V          ; 0.201 V                             ; 0.131 V                             ; 4.61e-10 s                 ; 4.53e-10 s                 ; No                        ; Yes                       ;
+; led[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.07e-07 V                   ; 2.36 V              ; -0.0231 V           ; 0.14 V                               ; 0.089 V                              ; 4.52e-10 s                  ; 4.35e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.07e-07 V                  ; 2.36 V             ; -0.0231 V          ; 0.14 V                              ; 0.089 V                             ; 4.52e-10 s                 ; 4.35e-10 s                 ; No                        ; Yes                       ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Slow 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.96e-05 V                   ; 2.38 V              ; -0.0306 V           ; 0.23 V                               ; 0.206 V                              ; 4.83e-10 s                  ; 5.01e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 3.96e-05 V                  ; 2.38 V             ; -0.0306 V          ; 0.23 V                              ; 0.206 V                             ; 4.83e-10 s                 ; 5.01e-10 s                 ; No                        ; Yes                       ;
+; led[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 3.49e-05 V                   ; 2.34 V              ; -0.0118 V           ; 0.182 V                              ; 0.051 V                              ; 4.81e-10 s                  ; 4.83e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 3.49e-05 V                  ; 2.34 V             ; -0.0118 V          ; 0.182 V                             ; 0.051 V                             ; 4.81e-10 s                 ; 4.83e-10 s                 ; Yes                       ; Yes                       ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 0c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 4.25e-06 V                   ; 2.9 V               ; -0.107 V            ; 0.378 V                              ; 0.16 V                               ; 2.87e-10 s                  ; 4.28e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 4.25e-06 V                  ; 2.9 V              ; -0.107 V           ; 0.378 V                             ; 0.16 V                              ; 2.87e-10 s                 ; 4.28e-10 s                 ; No                        ; No                        ;
+; led[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 3.54e-06 V                   ; 2.81 V              ; -0.0578 V           ; 0.303 V                              ; 0.28 V                               ; 2.93e-10 s                  ; 3.01e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 3.54e-06 V                  ; 2.81 V             ; -0.0578 V          ; 0.303 V                             ; 0.28 V                              ; 2.93e-10 s                 ; 3.01e-10 s                 ; No                        ; No                        ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Integrity Metrics (Fast 1100mv 85c Model)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin    ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; led[0] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000247 V                   ; 2.85 V              ; -0.0711 V           ; 0.204 V                              ; 0.181 V                              ; 4.55e-10 s                  ; 4.49e-10 s                  ; No                         ; No                         ; 2.75 V                      ; 0.000247 V                  ; 2.85 V             ; -0.0711 V          ; 0.204 V                             ; 0.181 V                             ; 4.55e-10 s                 ; 4.49e-10 s                 ; No                        ; No                        ;
+; led[1] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.75 V                       ; 0.000213 V                   ; 2.79 V              ; -0.0324 V           ; 0.139 V                              ; 0.119 V                              ; 4.42e-10 s                  ; 4.33e-10 s                  ; No                         ; Yes                        ; 2.75 V                      ; 0.000213 V                  ; 2.79 V             ; -0.0324 V          ; 0.139 V                             ; 0.119 V                             ; 4.42e-10 s                 ; 4.33e-10 s                 ; No                        ; Yes                       ;
++--------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                             ;
++------------------------+------------------------+----------+----------+----------+----------+
+; From Clock             ; To Clock               ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------+------------------------+----------+----------+----------+----------+
+; dff_inst1              ; clk                    ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[2].dff_inst  ; dff_gen_1[1].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[3].dff_inst  ; dff_gen_1[2].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[4].dff_inst  ; dff_gen_1[3].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[5].dff_inst  ; dff_gen_1[4].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[6].dff_inst  ; dff_gen_1[5].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[7].dff_inst  ; dff_gen_1[6].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[8].dff_inst  ; dff_gen_1[7].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[9].dff_inst  ; dff_gen_1[8].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[10].dff_inst ; dff_gen_1[9].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[11].dff_inst ; dff_gen_1[10].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[12].dff_inst ; dff_gen_1[11].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[13].dff_inst ; dff_gen_1[12].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[14].dff_inst ; dff_gen_1[13].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[15].dff_inst ; dff_gen_1[14].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_inst2              ; dff_gen_1[15].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[2].dff_inst  ; dff_gen_2[1].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[3].dff_inst  ; dff_gen_2[2].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[4].dff_inst  ; dff_gen_2[3].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[5].dff_inst  ; dff_gen_2[4].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[6].dff_inst  ; dff_gen_2[5].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[7].dff_inst  ; dff_gen_2[6].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[8].dff_inst  ; dff_gen_2[7].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[8].dff_inst  ; dff_gen_2[8].dff_inst  ; 1        ; 0        ; 0        ; 0        ;
+; dff_gen_1[1].dff_inst  ; dff_inst1              ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[1].dff_inst  ; dff_inst2              ; 1        ; 1        ; 0        ; 0        ;
++------------------------+------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                              ;
++------------------------+------------------------+----------+----------+----------+----------+
+; From Clock             ; To Clock               ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------------+------------------------+----------+----------+----------+----------+
+; dff_inst1              ; clk                    ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[2].dff_inst  ; dff_gen_1[1].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[3].dff_inst  ; dff_gen_1[2].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[4].dff_inst  ; dff_gen_1[3].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[5].dff_inst  ; dff_gen_1[4].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[6].dff_inst  ; dff_gen_1[5].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[7].dff_inst  ; dff_gen_1[6].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[8].dff_inst  ; dff_gen_1[7].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[9].dff_inst  ; dff_gen_1[8].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[10].dff_inst ; dff_gen_1[9].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[11].dff_inst ; dff_gen_1[10].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[12].dff_inst ; dff_gen_1[11].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[13].dff_inst ; dff_gen_1[12].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[14].dff_inst ; dff_gen_1[13].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_1[15].dff_inst ; dff_gen_1[14].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_inst2              ; dff_gen_1[15].dff_inst ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[2].dff_inst  ; dff_gen_2[1].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[3].dff_inst  ; dff_gen_2[2].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[4].dff_inst  ; dff_gen_2[3].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[5].dff_inst  ; dff_gen_2[4].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[6].dff_inst  ; dff_gen_2[5].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[7].dff_inst  ; dff_gen_2[6].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[8].dff_inst  ; dff_gen_2[7].dff_inst  ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[8].dff_inst  ; dff_gen_2[8].dff_inst  ; 1        ; 0        ; 0        ; 0        ;
+; dff_gen_1[1].dff_inst  ; dff_inst1              ; 1        ; 1        ; 0        ; 0        ;
+; dff_gen_2[1].dff_inst  ; dff_inst2              ; 1        ; 1        ; 0        ; 0        ;
++------------------------+------------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 2     ; 2    ;
++---------------------------------+-------+------+
+
+
++----------------------------------------------------------------------+
+; Clock Status Summary                                                 ;
++------------------------+------------------------+------+-------------+
+; Target                 ; Clock                  ; Type ; Status      ;
++------------------------+------------------------+------+-------------+
+; clk                    ; clk                    ; Base ; Constrained ;
+; dff_gen_1[1].dff_inst  ; dff_gen_1[1].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[2].dff_inst  ; dff_gen_1[2].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[3].dff_inst  ; dff_gen_1[3].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[4].dff_inst  ; dff_gen_1[4].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[5].dff_inst  ; dff_gen_1[5].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[6].dff_inst  ; dff_gen_1[6].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[7].dff_inst  ; dff_gen_1[7].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[8].dff_inst  ; dff_gen_1[8].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[9].dff_inst  ; dff_gen_1[9].dff_inst  ; Base ; Constrained ;
+; dff_gen_1[10].dff_inst ; dff_gen_1[10].dff_inst ; Base ; Constrained ;
+; dff_gen_1[11].dff_inst ; dff_gen_1[11].dff_inst ; Base ; Constrained ;
+; dff_gen_1[12].dff_inst ; dff_gen_1[12].dff_inst ; Base ; Constrained ;
+; dff_gen_1[13].dff_inst ; dff_gen_1[13].dff_inst ; Base ; Constrained ;
+; dff_gen_1[14].dff_inst ; dff_gen_1[14].dff_inst ; Base ; Constrained ;
+; dff_gen_1[15].dff_inst ; dff_gen_1[15].dff_inst ; Base ; Constrained ;
+; dff_gen_2[1].dff_inst  ; dff_gen_2[1].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[2].dff_inst  ; dff_gen_2[2].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[3].dff_inst  ; dff_gen_2[3].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[4].dff_inst  ; dff_gen_2[4].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[5].dff_inst  ; dff_gen_2[5].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[6].dff_inst  ; dff_gen_2[6].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[7].dff_inst  ; dff_gen_2[7].dff_inst  ; Base ; Constrained ;
+; dff_gen_2[8].dff_inst  ; dff_gen_2[8].dff_inst  ; Base ; Constrained ;
+; dff_inst1              ; dff_inst1              ; Base ; Constrained ;
+; dff_inst2              ; dff_inst2              ; Base ; Constrained ;
++------------------------+------------------------+------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; led[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; led[0]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; led[1]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sun Nov 19 21:08:57 2023
+Info: Command: quartus_sta p_8_3 -c p_8_3
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'p_8_3.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[14].dff_inst dff_gen_1[14].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[13].dff_inst dff_gen_1[13].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[12].dff_inst dff_gen_1[12].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[11].dff_inst dff_gen_1[11].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[10].dff_inst dff_gen_1[10].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[9].dff_inst dff_gen_1[9].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[8].dff_inst dff_gen_1[8].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[7].dff_inst dff_gen_1[7].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[6].dff_inst dff_gen_1[6].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[5].dff_inst dff_gen_1[5].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[4].dff_inst dff_gen_1[4].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[3].dff_inst dff_gen_1[3].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[2].dff_inst dff_gen_1[2].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[1].dff_inst dff_gen_1[1].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_inst1 dff_inst1
+    Info (332105): create_clock -period 1.000 -name clk clk
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[8].dff_inst dff_gen_2[8].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[7].dff_inst dff_gen_2[7].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[6].dff_inst dff_gen_2[6].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[5].dff_inst dff_gen_2[5].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[4].dff_inst dff_gen_2[4].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[3].dff_inst dff_gen_2[3].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[2].dff_inst dff_gen_2[2].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_gen_2[1].dff_inst dff_gen_2[1].dff_inst
+    Info (332105): create_clock -period 1.000 -name dff_inst2 dff_inst2
+    Info (332105): create_clock -period 1.000 -name dff_gen_1[15].dff_inst dff_gen_1[15].dff_inst
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 85C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.354
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.354              -2.354 clk 
+    Info (332119):    -1.991              -1.991 dff_gen_1[15].dff_inst 
+    Info (332119):    -1.945              -1.945 dff_gen_1[11].dff_inst 
+    Info (332119):    -1.794              -1.794 dff_gen_1[3].dff_inst 
+    Info (332119):    -1.777              -1.777 dff_gen_2[1].dff_inst 
+    Info (332119):    -1.774              -1.774 dff_gen_1[8].dff_inst 
+    Info (332119):    -1.702              -1.702 dff_gen_1[7].dff_inst 
+    Info (332119):    -1.692              -1.692 dff_gen_2[5].dff_inst 
+    Info (332119):    -1.689              -1.689 dff_gen_1[5].dff_inst 
+    Info (332119):    -1.578              -1.578 dff_gen_1[1].dff_inst 
+    Info (332119):    -1.563              -1.563 dff_gen_2[4].dff_inst 
+    Info (332119):    -1.561              -1.561 dff_gen_1[13].dff_inst 
+    Info (332119):    -1.547              -1.547 dff_gen_1[9].dff_inst 
+    Info (332119):    -1.504              -1.504 dff_gen_1[4].dff_inst 
+    Info (332119):    -1.488              -1.488 dff_inst1 
+    Info (332119):    -1.459              -1.459 dff_gen_2[2].dff_inst 
+    Info (332119):    -1.449              -1.449 dff_gen_1[10].dff_inst 
+    Info (332119):    -1.432              -1.432 dff_gen_2[6].dff_inst 
+    Info (332119):    -1.432              -1.432 dff_gen_2[7].dff_inst 
+    Info (332119):    -1.430              -1.430 dff_gen_1[2].dff_inst 
+    Info (332119):    -1.415              -1.415 dff_gen_2[3].dff_inst 
+    Info (332119):    -1.405              -1.405 dff_gen_1[6].dff_inst 
+    Info (332119):    -1.382              -1.382 dff_gen_1[14].dff_inst 
+    Info (332119):    -1.382              -1.382 dff_inst2 
+    Info (332119):    -1.218              -1.218 dff_gen_1[12].dff_inst 
+    Info (332119):    -0.506              -0.506 dff_gen_2[8].dff_inst 
+Info (332146): Worst-case hold slack is 0.175
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.175               0.000 dff_gen_1[12].dff_inst 
+    Info (332119):     0.404               0.000 dff_inst2 
+    Info (332119):     0.421               0.000 dff_gen_2[8].dff_inst 
+    Info (332119):     0.464               0.000 dff_gen_1[14].dff_inst 
+    Info (332119):     0.482               0.000 dff_gen_1[6].dff_inst 
+    Info (332119):     0.520               0.000 dff_gen_1[9].dff_inst 
+    Info (332119):     0.530               0.000 dff_gen_2[6].dff_inst 
+    Info (332119):     0.531               0.000 dff_gen_2[2].dff_inst 
+    Info (332119):     0.531               0.000 dff_gen_2[3].dff_inst 
+    Info (332119):     0.535               0.000 dff_gen_1[2].dff_inst 
+    Info (332119):     0.547               0.000 dff_inst1 
+    Info (332119):     0.550               0.000 dff_gen_1[10].dff_inst 
+    Info (332119):     0.552               0.000 dff_gen_1[1].dff_inst 
+    Info (332119):     0.556               0.000 dff_gen_2[7].dff_inst 
+    Info (332119):     0.580               0.000 dff_gen_1[4].dff_inst 
+    Info (332119):     0.627               0.000 dff_gen_2[4].dff_inst 
+    Info (332119):     0.641               0.000 dff_gen_1[5].dff_inst 
+    Info (332119):     0.649               0.000 dff_gen_1[11].dff_inst 
+    Info (332119):     0.649               0.000 dff_gen_2[5].dff_inst 
+    Info (332119):     0.663               0.000 dff_gen_2[1].dff_inst 
+    Info (332119):     0.666               0.000 dff_gen_1[13].dff_inst 
+    Info (332119):     0.673               0.000 dff_gen_1[8].dff_inst 
+    Info (332119):     0.675               0.000 dff_gen_1[7].dff_inst 
+    Info (332119):     0.728               0.000 clk 
+    Info (332119):     0.729               0.000 dff_gen_1[3].dff_inst 
+    Info (332119):     0.914               0.000 dff_gen_1[15].dff_inst 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.402
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.402              -0.796 clk 
+    Info (332119):    -0.394              -0.585 dff_gen_2[1].dff_inst 
+    Info (332119):    -0.394              -0.575 dff_gen_1[11].dff_inst 
+    Info (332119):    -0.394              -0.537 dff_gen_1[8].dff_inst 
+    Info (332119):    -0.394              -0.530 dff_gen_1[15].dff_inst 
+    Info (332119):    -0.394              -0.530 dff_gen_1[3].dff_inst 
+    Info (332119):    -0.394              -0.527 dff_gen_2[5].dff_inst 
+    Info (332119):    -0.394              -0.526 dff_gen_1[1].dff_inst 
+    Info (332119):    -0.394              -0.525 dff_gen_1[12].dff_inst 
+    Info (332119):    -0.394              -0.524 dff_gen_1[5].dff_inst 
+    Info (332119):    -0.394              -0.524 dff_gen_1[7].dff_inst 
+    Info (332119):    -0.394              -0.523 dff_gen_1[9].dff_inst 
+    Info (332119):    -0.394              -0.513 dff_gen_2[8].dff_inst 
+    Info (332119):    -0.394              -0.511 dff_gen_1[14].dff_inst 
+    Info (332119):    -0.394              -0.511 dff_inst1 
+    Info (332119):    -0.394              -0.511 dff_inst2 
+    Info (332119):    -0.394              -0.510 dff_gen_1[10].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_1[2].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_1[4].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_1[6].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_2[2].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_2[3].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_2[4].dff_inst 
+    Info (332119):    -0.394              -0.510 dff_gen_2[6].dff_inst 
+    Info (332119):    -0.394              -0.509 dff_gen_1[13].dff_inst 
+    Info (332119):    -0.394              -0.508 dff_gen_2[7].dff_inst 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Slow 1100mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -2.263
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.263              -2.263 clk 
+    Info (332119):    -2.063              -2.063 dff_gen_1[15].dff_inst 
+    Info (332119):    -1.987              -1.987 dff_gen_1[11].dff_inst 
+    Info (332119):    -1.772              -1.772 dff_gen_1[8].dff_inst 
+    Info (332119):    -1.771              -1.771 dff_gen_2[1].dff_inst 
+    Info (332119):    -1.762              -1.762 dff_gen_1[3].dff_inst 
+    Info (332119):    -1.689              -1.689 dff_gen_2[5].dff_inst 
+    Info (332119):    -1.676              -1.676 dff_gen_1[5].dff_inst 
+    Info (332119):    -1.664              -1.664 dff_gen_1[7].dff_inst 
+    Info (332119):    -1.636              -1.636 dff_gen_2[4].dff_inst 
+    Info (332119):    -1.585              -1.585 dff_gen_1[13].dff_inst 
+    Info (332119):    -1.576              -1.576 dff_inst1 
+    Info (332119):    -1.568              -1.568 dff_gen_1[4].dff_inst 
+    Info (332119):    -1.539              -1.539 dff_gen_1[9].dff_inst 
+    Info (332119):    -1.538              -1.538 dff_gen_1[1].dff_inst 
+    Info (332119):    -1.530              -1.530 dff_gen_2[2].dff_inst 
+    Info (332119):    -1.523              -1.523 dff_gen_1[10].dff_inst 
+    Info (332119):    -1.521              -1.521 dff_gen_1[2].dff_inst 
+    Info (332119):    -1.509              -1.509 dff_gen_2[6].dff_inst 
+    Info (332119):    -1.496              -1.496 dff_gen_1[6].dff_inst 
+    Info (332119):    -1.455              -1.455 dff_gen_1[14].dff_inst 
+    Info (332119):    -1.454              -1.454 dff_inst2 
+    Info (332119):    -1.452              -1.452 dff_gen_2[7].dff_inst 
+    Info (332119):    -1.441              -1.441 dff_gen_2[3].dff_inst 
+    Info (332119):    -1.313              -1.313 dff_gen_1[12].dff_inst 
+    Info (332119):    -0.470              -0.470 dff_gen_2[8].dff_inst 
+Info (332146): Worst-case hold slack is 0.279
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.279               0.000 dff_gen_1[12].dff_inst 
+    Info (332119):     0.380               0.000 dff_gen_2[8].dff_inst 
+    Info (332119):     0.483               0.000 dff_inst2 
+    Info (332119):     0.517               0.000 dff_gen_1[9].dff_inst 
+    Info (332119):     0.550               0.000 dff_gen_1[14].dff_inst 
+    Info (332119):     0.560               0.000 dff_gen_1[6].dff_inst 
+    Info (332119):     0.565               0.000 dff_gen_1[1].dff_inst 
+    Info (332119):     0.573               0.000 dff_gen_2[3].dff_inst 
+    Info (332119):     0.596               0.000 dff_gen_2[2].dff_inst 
+    Info (332119):     0.597               0.000 dff_gen_2[7].dff_inst 
+    Info (332119):     0.612               0.000 dff_gen_2[6].dff_inst 
+    Info (332119):     0.621               0.000 dff_gen_1[2].dff_inst 
+    Info (332119):     0.623               0.000 dff_inst1 
+    Info (332119):     0.624               0.000 dff_gen_1[10].dff_inst 
+    Info (332119):     0.654               0.000 dff_gen_1[4].dff_inst 
+    Info (332119):     0.665               0.000 dff_gen_1[7].dff_inst 
+    Info (332119):     0.670               0.000 dff_gen_1[5].dff_inst 
+    Info (332119):     0.670               0.000 dff_gen_2[5].dff_inst 
+    Info (332119):     0.686               0.000 dff_gen_2[1].dff_inst 
+    Info (332119):     0.687               0.000 dff_gen_1[11].dff_inst 
+    Info (332119):     0.688               0.000 clk 
+    Info (332119):     0.695               0.000 dff_gen_2[4].dff_inst 
+    Info (332119):     0.703               0.000 dff_gen_1[13].dff_inst 
+    Info (332119):     0.714               0.000 dff_gen_1[8].dff_inst 
+    Info (332119):     0.729               0.000 dff_gen_1[3].dff_inst 
+    Info (332119):     0.983               0.000 dff_gen_1[15].dff_inst 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.394
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.394              -0.776 clk 
+    Info (332119):    -0.394              -0.563 dff_gen_1[11].dff_inst 
+    Info (332119):    -0.394              -0.555 dff_gen_2[1].dff_inst 
+    Info (332119):    -0.394              -0.536 dff_gen_1[8].dff_inst 
+    Info (332119):    -0.394              -0.524 dff_gen_1[15].dff_inst 
+    Info (332119):    -0.394              -0.524 dff_gen_1[3].dff_inst 
+    Info (332119):    -0.394              -0.520 dff_gen_1[12].dff_inst 
+    Info (332119):    -0.394              -0.520 dff_gen_2[8].dff_inst 
+    Info (332119):    -0.394              -0.516 dff_gen_1[14].dff_inst 
+    Info (332119):    -0.394              -0.516 dff_gen_1[1].dff_inst 
+    Info (332119):    -0.394              -0.516 dff_gen_2[5].dff_inst 
+    Info (332119):    -0.394              -0.516 dff_inst2 
+    Info (332119):    -0.394              -0.514 dff_gen_1[10].dff_inst 
+    Info (332119):    -0.394              -0.514 dff_gen_1[2].dff_inst 
+    Info (332119):    -0.394              -0.514 dff_gen_1[5].dff_inst 
+    Info (332119):    -0.394              -0.514 dff_gen_1[6].dff_inst 
+    Info (332119):    -0.394              -0.514 dff_gen_1[7].dff_inst 
+    Info (332119):    -0.394              -0.514 dff_gen_1[9].dff_inst 
+    Info (332119):    -0.394              -0.514 dff_gen_2[6].dff_inst 
+    Info (332119):    -0.394              -0.513 dff_gen_2[4].dff_inst 
+    Info (332119):    -0.394              -0.513 dff_inst1 
+    Info (332119):    -0.394              -0.512 dff_gen_1[4].dff_inst 
+    Info (332119):    -0.394              -0.512 dff_gen_2[2].dff_inst 
+    Info (332119):    -0.394              -0.512 dff_gen_2[3].dff_inst 
+    Info (332119):    -0.394              -0.511 dff_gen_1[13].dff_inst 
+    Info (332119):    -0.394              -0.511 dff_gen_2[7].dff_inst 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Fast 1100mV 85C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.803
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.803              -1.803 clk 
+    Info (332119):    -1.238              -1.238 dff_gen_1[3].dff_inst 
+    Info (332119):    -1.208              -1.208 dff_gen_1[7].dff_inst 
+    Info (332119):    -1.187              -1.187 dff_gen_1[11].dff_inst 
+    Info (332119):    -1.153              -1.153 dff_gen_1[8].dff_inst 
+    Info (332119):    -1.127              -1.127 dff_gen_1[15].dff_inst 
+    Info (332119):    -1.125              -1.125 dff_gen_1[5].dff_inst 
+    Info (332119):    -1.116              -1.116 dff_gen_2[5].dff_inst 
+    Info (332119):    -1.057              -1.057 dff_gen_1[9].dff_inst 
+    Info (332119):    -1.054              -1.054 dff_gen_1[1].dff_inst 
+    Info (332119):    -1.037              -1.037 dff_gen_2[1].dff_inst 
+    Info (332119):    -0.885              -0.885 dff_gen_1[13].dff_inst 
+    Info (332119):    -0.853              -0.853 dff_gen_2[7].dff_inst 
+    Info (332119):    -0.820              -0.820 dff_gen_2[4].dff_inst 
+    Info (332119):    -0.803              -0.803 dff_gen_2[3].dff_inst 
+    Info (332119):    -0.794              -0.794 dff_inst1 
+    Info (332119):    -0.787              -0.787 dff_gen_1[4].dff_inst 
+    Info (332119):    -0.761              -0.761 dff_gen_1[2].dff_inst 
+    Info (332119):    -0.749              -0.749 dff_gen_1[10].dff_inst 
+    Info (332119):    -0.746              -0.746 dff_gen_2[2].dff_inst 
+    Info (332119):    -0.734              -0.734 dff_gen_1[6].dff_inst 
+    Info (332119):    -0.732              -0.732 dff_gen_2[6].dff_inst 
+    Info (332119):    -0.715              -0.715 dff_gen_1[14].dff_inst 
+    Info (332119):    -0.706              -0.706 dff_inst2 
+    Info (332119):    -0.626              -0.626 dff_gen_1[12].dff_inst 
+    Info (332119):    -0.069              -0.069 dff_gen_2[8].dff_inst 
+Info (332146): Worst-case hold slack is -0.082
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.082              -0.082 dff_gen_1[12].dff_inst 
+    Info (332119):     0.028               0.000 dff_inst2 
+    Info (332119):     0.070               0.000 dff_gen_1[14].dff_inst 
+    Info (332119):     0.088               0.000 dff_gen_1[6].dff_inst 
+    Info (332119):     0.093               0.000 dff_gen_2[2].dff_inst 
+    Info (332119):     0.098               0.000 dff_gen_2[6].dff_inst 
+    Info (332119):     0.119               0.000 dff_gen_1[10].dff_inst 
+    Info (332119):     0.130               0.000 dff_gen_1[2].dff_inst 
+    Info (332119):     0.134               0.000 dff_inst1 
+    Info (332119):     0.139               0.000 dff_gen_1[4].dff_inst 
+    Info (332119):     0.165               0.000 dff_gen_2[4].dff_inst 
+    Info (332119):     0.194               0.000 dff_gen_2[8].dff_inst 
+    Info (332119):     0.196               0.000 dff_gen_2[3].dff_inst 
+    Info (332119):     0.246               0.000 dff_gen_2[7].dff_inst 
+    Info (332119):     0.249               0.000 dff_gen_1[11].dff_inst 
+    Info (332119):     0.289               0.000 dff_gen_2[1].dff_inst 
+    Info (332119):     0.290               0.000 dff_gen_1[9].dff_inst 
+    Info (332119):     0.299               0.000 dff_gen_1[13].dff_inst 
+    Info (332119):     0.303               0.000 dff_gen_1[1].dff_inst 
+    Info (332119):     0.372               0.000 dff_gen_1[5].dff_inst 
+    Info (332119):     0.372               0.000 dff_gen_1[8].dff_inst 
+    Info (332119):     0.375               0.000 dff_gen_2[5].dff_inst 
+    Info (332119):     0.396               0.000 dff_gen_1[15].dff_inst 
+    Info (332119):     0.435               0.000 dff_gen_1[7].dff_inst 
+    Info (332119):     0.489               0.000 dff_gen_1[3].dff_inst 
+    Info (332119):     0.737               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.381
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.381              -0.410 clk 
+    Info (332119):     0.030               0.000 dff_gen_2[1].dff_inst 
+    Info (332119):     0.073               0.000 dff_gen_1[8].dff_inst 
+    Info (332119):     0.099               0.000 dff_gen_1[15].dff_inst 
+    Info (332119):     0.100               0.000 dff_gen_1[11].dff_inst 
+    Info (332119):     0.128               0.000 dff_gen_2[8].dff_inst 
+    Info (332119):     0.130               0.000 dff_gen_1[14].dff_inst 
+    Info (332119):     0.130               0.000 dff_inst2 
+    Info (332119):     0.131               0.000 dff_gen_1[3].dff_inst 
+    Info (332119):     0.134               0.000 dff_gen_2[5].dff_inst 
+    Info (332119):     0.140               0.000 dff_gen_1[1].dff_inst 
+    Info (332119):     0.140               0.000 dff_gen_1[9].dff_inst 
+    Info (332119):     0.143               0.000 dff_gen_2[4].dff_inst 
+    Info (332119):     0.145               0.000 dff_gen_1[5].dff_inst 
+    Info (332119):     0.145               0.000 dff_gen_2[2].dff_inst 
+    Info (332119):     0.145               0.000 dff_inst1 
+    Info (332119):     0.146               0.000 dff_gen_1[12].dff_inst 
+    Info (332119):     0.146               0.000 dff_gen_1[6].dff_inst 
+    Info (332119):     0.147               0.000 dff_gen_1[10].dff_inst 
+    Info (332119):     0.147               0.000 dff_gen_2[3].dff_inst 
+    Info (332119):     0.147               0.000 dff_gen_2[6].dff_inst 
+    Info (332119):     0.148               0.000 dff_gen_1[2].dff_inst 
+    Info (332119):     0.151               0.000 dff_gen_1[4].dff_inst 
+    Info (332119):     0.151               0.000 dff_gen_1[7].dff_inst 
+    Info (332119):     0.160               0.000 dff_gen_1[13].dff_inst 
+    Info (332119):     0.163               0.000 dff_gen_2[7].dff_inst 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info: Analyzing Fast 1100mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -1.478
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -1.478              -1.478 clk 
+    Info (332119):    -1.100              -1.100 dff_gen_1[3].dff_inst 
+    Info (332119):    -1.079              -1.079 dff_gen_1[11].dff_inst 
+    Info (332119):    -1.068              -1.068 dff_gen_1[7].dff_inst 
+    Info (332119):    -1.049              -1.049 dff_gen_1[15].dff_inst 
+    Info (332119):    -1.035              -1.035 dff_gen_1[8].dff_inst 
+    Info (332119):    -1.007              -1.007 dff_gen_1[5].dff_inst 
+    Info (332119):    -1.005              -1.005 dff_gen_2[5].dff_inst 
+    Info (332119):    -0.946              -0.946 dff_gen_1[9].dff_inst 
+    Info (332119):    -0.945              -0.945 dff_gen_2[1].dff_inst 
+    Info (332119):    -0.933              -0.933 dff_gen_1[1].dff_inst 
+    Info (332119):    -0.821              -0.821 dff_gen_1[13].dff_inst 
+    Info (332119):    -0.780              -0.780 dff_gen_2[7].dff_inst 
+    Info (332119):    -0.777              -0.777 dff_gen_2[4].dff_inst 
+    Info (332119):    -0.759              -0.759 dff_inst1 
+    Info (332119):    -0.744              -0.744 dff_gen_1[4].dff_inst 
+    Info (332119):    -0.738              -0.738 dff_gen_2[3].dff_inst 
+    Info (332119):    -0.727              -0.727 dff_gen_1[2].dff_inst 
+    Info (332119):    -0.713              -0.713 dff_gen_1[10].dff_inst 
+    Info (332119):    -0.711              -0.711 dff_gen_2[2].dff_inst 
+    Info (332119):    -0.708              -0.708 dff_gen_1[6].dff_inst 
+    Info (332119):    -0.697              -0.697 dff_gen_2[6].dff_inst 
+    Info (332119):    -0.682              -0.682 dff_gen_1[14].dff_inst 
+    Info (332119):    -0.673              -0.673 dff_inst2 
+    Info (332119):    -0.605              -0.605 dff_gen_1[12].dff_inst 
+    Info (332119):    -0.023              -0.023 dff_gen_2[8].dff_inst 
+Info (332146): Worst-case hold slack is -0.074
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.074              -0.074 dff_gen_1[12].dff_inst 
+    Info (332119):     0.024               0.000 dff_inst2 
+    Info (332119):     0.060               0.000 dff_gen_1[14].dff_inst 
+    Info (332119):     0.072               0.000 dff_gen_1[6].dff_inst 
+    Info (332119):     0.076               0.000 dff_gen_2[2].dff_inst 
+    Info (332119):     0.084               0.000 dff_gen_2[6].dff_inst 
+    Info (332119):     0.099               0.000 dff_gen_1[10].dff_inst 
+    Info (332119):     0.111               0.000 dff_gen_1[2].dff_inst 
+    Info (332119):     0.112               0.000 dff_inst1 
+    Info (332119):     0.116               0.000 dff_gen_1[4].dff_inst 
+    Info (332119):     0.137               0.000 dff_gen_2[4].dff_inst 
+    Info (332119):     0.148               0.000 dff_gen_2[3].dff_inst 
+    Info (332119):     0.161               0.000 dff_gen_2[8].dff_inst 
+    Info (332119):     0.192               0.000 dff_gen_1[11].dff_inst 
+    Info (332119):     0.194               0.000 dff_gen_2[7].dff_inst 
+    Info (332119):     0.212               0.000 dff_gen_1[9].dff_inst 
+    Info (332119):     0.232               0.000 dff_gen_2[1].dff_inst 
+    Info (332119):     0.235               0.000 dff_gen_1[1].dff_inst 
+    Info (332119):     0.248               0.000 dff_gen_1[13].dff_inst 
+    Info (332119):     0.304               0.000 dff_gen_2[5].dff_inst 
+    Info (332119):     0.305               0.000 dff_gen_1[5].dff_inst 
+    Info (332119):     0.308               0.000 dff_gen_1[8].dff_inst 
+    Info (332119):     0.341               0.000 dff_gen_1[15].dff_inst 
+    Info (332119):     0.342               0.000 dff_gen_1[7].dff_inst 
+    Info (332119):     0.399               0.000 dff_gen_1[3].dff_inst 
+    Info (332119):     0.484               0.000 clk 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -0.365
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.365              -0.388 clk 
+    Info (332119):     0.072               0.000 dff_gen_2[1].dff_inst 
+    Info (332119):     0.091               0.000 dff_gen_1[8].dff_inst 
+    Info (332119):     0.098               0.000 dff_gen_1[11].dff_inst 
+    Info (332119):     0.109               0.000 dff_gen_1[15].dff_inst 
+    Info (332119):     0.130               0.000 dff_gen_2[8].dff_inst 
+    Info (332119):     0.131               0.000 dff_gen_1[14].dff_inst 
+    Info (332119):     0.131               0.000 dff_inst2 
+    Info (332119):     0.143               0.000 dff_gen_1[3].dff_inst 
+    Info (332119):     0.145               0.000 dff_gen_2[4].dff_inst 
+    Info (332119):     0.145               0.000 dff_gen_2[5].dff_inst 
+    Info (332119):     0.146               0.000 dff_gen_1[6].dff_inst 
+    Info (332119):     0.146               0.000 dff_gen_2[3].dff_inst 
+    Info (332119):     0.147               0.000 dff_gen_2[2].dff_inst 
+    Info (332119):     0.147               0.000 dff_inst1 
+    Info (332119):     0.148               0.000 dff_gen_1[2].dff_inst 
+    Info (332119):     0.148               0.000 dff_gen_1[9].dff_inst 
+    Info (332119):     0.149               0.000 dff_gen_1[10].dff_inst 
+    Info (332119):     0.149               0.000 dff_gen_1[1].dff_inst 
+    Info (332119):     0.149               0.000 dff_gen_2[6].dff_inst 
+    Info (332119):     0.150               0.000 dff_gen_1[4].dff_inst 
+    Info (332119):     0.152               0.000 dff_gen_1[12].dff_inst 
+    Info (332119):     0.153               0.000 dff_gen_1[5].dff_inst 
+    Info (332119):     0.156               0.000 dff_gen_1[7].dff_inst 
+    Info (332119):     0.161               0.000 dff_gen_1[13].dff_inst 
+    Info (332119):     0.162               0.000 dff_gen_2[7].dff_inst 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): Design MTBF is not calculated because the design doesn't meet its timing requirements.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5160 megabytes
+    Info: Processing ended: Sun Nov 19 21:09:01 2023
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

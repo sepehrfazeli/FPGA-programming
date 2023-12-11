@@ -1,0 +1,120 @@
+|p_9_4
+op1[0] => op1[0].IN1
+op1[1] => op1[1].IN1
+op1[2] => op1[2].IN1
+op1[3] => op1[3].IN1
+op2[0] => op2[0].IN1
+op2[1] => op2[1].IN1
+op2[2] => op2[2].IN1
+op2[3] => op2[3].IN1
+load => load.IN1
+D0_SEG[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+D0_SEG[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[0] <= Mux13.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[1] <= Mux12.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[2] <= Mux11.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[3] <= Mux10.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[4] <= Mux9.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[5] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+D1_SEG[6] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[0] <= Mux20.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[1] <= Mux19.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[2] <= Mux18.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[3] <= Mux17.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[4] <= Mux16.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[5] <= Mux15.DB_MAX_OUTPUT_PORT_TYPE
+D2_SEG[6] <= Mux14.DB_MAX_OUTPUT_PORT_TYPE
+LT <= comparator_8bit:comp.LT
+EQ <= comparator_8bit:comp.EQ
+GT <= comparator_8bit:comp.GT
+
+
+|p_9_4|multiplier:mult
+op1[0] => Mult0.IN3
+op1[1] => Mult0.IN2
+op1[2] => Mult0.IN1
+op1[3] => Mult0.IN0
+op2[0] => Mult0.IN7
+op2[1] => Mult0.IN6
+op2[2] => Mult0.IN5
+op2[3] => Mult0.IN4
+result[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+result[7] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_4|register_8bit:register
+data_in[0] => data_out[0]$latch.DATAIN
+data_in[1] => data_out[1]$latch.DATAIN
+data_in[2] => data_out[2]$latch.DATAIN
+data_in[3] => data_out[3]$latch.DATAIN
+data_in[4] => data_out[4]$latch.DATAIN
+data_in[5] => data_out[5]$latch.DATAIN
+data_in[6] => data_out[6]$latch.DATAIN
+data_in[7] => data_out[7]$latch.DATAIN
+load => data_out[0]$latch.LATCH_ENABLE
+load => data_out[1]$latch.LATCH_ENABLE
+load => data_out[2]$latch.LATCH_ENABLE
+load => data_out[3]$latch.LATCH_ENABLE
+load => data_out[4]$latch.LATCH_ENABLE
+load => data_out[5]$latch.LATCH_ENABLE
+load => data_out[6]$latch.LATCH_ENABLE
+load => data_out[7]$latch.LATCH_ENABLE
+data_out[0] <= data_out[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|p_9_4|comparator_8bit:comp
+op1[0] => LessThan0.IN8
+op1[0] => Equal0.IN7
+op1[1] => LessThan0.IN7
+op1[1] => Equal0.IN6
+op1[2] => LessThan0.IN6
+op1[2] => Equal0.IN5
+op1[3] => LessThan0.IN5
+op1[3] => Equal0.IN4
+op1[4] => LessThan0.IN4
+op1[4] => Equal0.IN3
+op1[5] => LessThan0.IN3
+op1[5] => Equal0.IN2
+op1[6] => LessThan0.IN2
+op1[6] => Equal0.IN1
+op1[7] => LessThan0.IN1
+op1[7] => Equal0.IN0
+op2[0] => LessThan0.IN16
+op2[0] => Equal0.IN15
+op2[1] => LessThan0.IN15
+op2[1] => Equal0.IN14
+op2[2] => LessThan0.IN14
+op2[2] => Equal0.IN13
+op2[3] => LessThan0.IN13
+op2[3] => Equal0.IN12
+op2[4] => LessThan0.IN12
+op2[4] => Equal0.IN11
+op2[5] => LessThan0.IN11
+op2[5] => Equal0.IN10
+op2[6] => LessThan0.IN10
+op2[6] => Equal0.IN9
+op2[7] => LessThan0.IN9
+op2[7] => Equal0.IN8
+LT <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+EQ <= EQ.DB_MAX_OUTPUT_PORT_TYPE
+GT <= GT.DB_MAX_OUTPUT_PORT_TYPE
+
+

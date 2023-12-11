@@ -1,0 +1,37 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'EN1'
+Slack : 0.158
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'EN2'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'EN1'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'EN2'
+Slack : 0.169
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'EN1'
+Slack : -0.048
+TNS   : -0.228
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'EN2'
+Slack : -0.045
+TNS   : -0.266
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'EN1'
+Slack : -0.046
+TNS   : -0.217
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'EN2'
+Slack : -0.042
+TNS   : -0.286
+
+------------------------------------------------------------

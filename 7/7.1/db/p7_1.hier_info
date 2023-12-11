@@ -1,0 +1,7 @@
+|p7_1
+S => Q.IN1
+R => Qn.IN0
+Q << Q.DB_MAX_OUTPUT_PORT_TYPE
+Qn << Qn.DB_MAX_OUTPUT_PORT_TYPE
+
+

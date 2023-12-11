@@ -1,0 +1,33 @@
+module p2_4 (
+    input wire [3:0] sw, // Input switches representing CT, CL, OT, and OL
+    output wire VGA_B, // Blue LED
+    output wire VGA_R // Red LED
+);
+
+    // Define registers for sensor inputs
+    reg CT, CL, OT, OL;
+
+    // Blue LED conditions
+    wire blue_condition_1 = CL & ~CT & ~OT & ~OL; // Only Coolant Level is low
+    wire blue_condition_2 = OL & ~CT & ~OT & ~CL; // Only Oil Level is low
+    wire blue_condition_3 = OT & ~OL & ~CT & ~CL; // Oil Temperature too high and Oil Level is OK
+    wire blue_condition_4 = CT & OL & ~OT & ~CL; // Coolant Temperature too high and Oil Level too low
+
+    // Red LED conditions
+    wire red_condition_1 = CT & CL; // Coolant Temperature too high and Coolant Level too low
+    wire red_condition_2 = OT & OL; // Oil Temperature too high and Oil Level too low
+    wire red_condition_3 = CT & OT; // Both Coolant and Oil Temperatures too high
+    wire red_condition_4 = CT & CL & OL & ~OT; // Coolant and Oil levels too low with high Coolant Temperature and OK Oil Temperature
+
+    assign VGA_B = blue_condition_1 | blue_condition_2 | blue_condition_3 | blue_condition_4;
+    assign VGA_R = red_condition_1 | red_condition_2 | red_condition_3 | red_condition_4;
+
+    // Register assignments
+    always @(sw) begin
+        CT <= sw[3]; // Coolant Temperature from switch 3
+        CL <= sw[2]; // Coolant Level from switch 2
+        OT <= sw[1]; // Oil Temperature from switch 1
+        OL <= sw[0]; // Oil Level from switch 0
+    end
+
+endmodule

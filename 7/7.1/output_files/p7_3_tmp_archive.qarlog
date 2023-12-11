@@ -1,0 +1,24 @@
+Quartus Prime Archive log --	C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/p7_3_tmp_archive.qarlog
+
+Archive:	C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/p7_3_tmp_archive.qar
+Date:		Fri Nov 10 20:28:49 2023
+Quartus Prime		22.1std.1 Build 917 02/14/2023 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/output_files/p7_3.flow.rpt
+C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/output_files/p7_3.map.rpt
+C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/output_files/p7_3.map.summary
+C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/p7_3.qpf
+C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/p7_3.qsf
+C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/p7_3.sv
+e:/intelfpga_lite/22.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 7 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri Nov 10 20:28:51 2023
+Source archive file:	C:/Users/SFI19/Downloads/FPGA/7/7.1/output_files/p7_3_tmp_archive.qar
+Archive was extracted into	C:/Users/SFI19/Downloads/FPGA/7/7.3/
+		 - successfully.

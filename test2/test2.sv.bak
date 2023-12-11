@@ -1,0 +1,10 @@
+module test2(
+	input logic btn[0],
+	output logic led[0]
+);
+
+if (btn[0] == 1)
+begin
+
+end 
+endmodule

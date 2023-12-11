@@ -1,0 +1,10 @@
+`timescale 1ns / 1ps
+module p_11_1(
+    input logic A,
+    input logic B,
+    input logic clk,
+    input logic rst,
+    output logic F,
+    output logic Cout
+);
+endmodule;

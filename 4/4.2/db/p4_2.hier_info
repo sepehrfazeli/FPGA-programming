@@ -1,0 +1,13 @@
+|p4_2
+sw[0] => Decoder0.IN1
+sw[1] => Decoder0.IN0
+btn[0] => led.IN1
+btn[1] => led.IN1
+btn[2] => led.IN1
+btn[3] => led.IN1
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+

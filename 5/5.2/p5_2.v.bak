@@ -1,0 +1,56 @@
+`timescale 1ns/1ps
+module p5_2 (
+    input [3:0] sw,     // Slide switches for segment control
+    output reg [6:0] D0_SEG,  // Seven-segment display segments for HEX0
+);
+
+// Define seven-segment segment patterns
+reg [6:0] segment_patterns [15:0];
+reg [3:0] status;
+
+initial begin
+    segment_patterns[0] = 7'b1000000; // '0'
+    segment_patterns[1] = 7'b1111001; // '1'
+    segment_patterns[2] = 7'b0100100; // '2'
+    segment_patterns[3] = 7'b0110000; // '3'
+    segment_patterns[4] = 7'b0011001; // '4'
+    segment_patterns[5] = 7'b0010010; // '5'
+    segment_patterns[6] = 7'b0000010; // '6'
+    segment_patterns[7] = 7'b1111000; // '7'
+    segment_patterns[8] = 7'b0000000; // '8'
+    segment_patterns[9] = 7'b0011000; // '9'
+	 segment_patterns[10] = 7'b0001000; // 'A'
+    segment_patterns[11] = 7'b0000011; // 'B'
+    segment_patterns[12] = 7'b1000110; // 'C'
+    segment_patterns[13] = 7'b0100001; // 'D'
+    segment_patterns[14] = 7'b0000110; // 'E'
+    segment_patterns[15] = 7'b0001110; // 'F'
+    segment_patterns[16] = 7'b1111111; // Blank display
+end
+
+always @(*) begin
+    // Determine which segments to illuminate based on slide switches
+    case(sw)
+        4'b0: status = segment_patterns[0]; // '0'
+        4'b1: status = segment_patterns[1]; // '1'
+        4'b2: status = segment_patterns[2]; // '2'
+        4'b3: status = segment_patterns[3]; // '3'
+        4'b4: status = segment_patterns[4]; // '4'
+        4'b5: status = segment_patterns[5]; // '5'
+        4'b6: status = segment_patterns[6]; // '6'
+        4'b7: status = segment_patterns[7]; // '7'
+        4'b8: status = segment_patterns[8]; // '8'
+        4'b9: status = segment_patterns[9]; // '9'
+        4'ba: status = segment_patterns[10]; // 'A'
+        4'bb: status = segment_patterns[11]; // 'B'
+        4'bc: status = segment_patterns[12]; // 'C'
+        4'bd: status = segment_patterns[13]; // 'D'
+        4'be: status = segment_patterns[14]; // 'E'
+        4'bf: status = segment_patterns[15]; // 'F'
+        default: status = segment_patterns[16]; // Blank display if none selected
+    endcase
+
+    assign D0_SEG = status;
+end
+
+endmodule
